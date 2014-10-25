@@ -1,2 +1,2 @@
-startbootstrap-stylish-portfolio
-================================
+Start Bootstrap - Stylish Portfolio
+=========
