@@ -47,8 +47,8 @@ body {
 
 .btn-light {
     border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
+    color: #fff;
+    background-color: rgb(0,191,255);
 }
 
 .btn-light:hover,
@@ -157,13 +157,22 @@ hr.small {
     display: table;
     position: relative;
     width: 100%;
-    height: 75%;
-    opacity: .8;
+    height: 74%;
+    
+
     background: url(http://lazytechguys.com/wp-content/uploads/2011/03/happy-sad-twitter-background-620x288.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+#iframing {
+    alignment-adjust: bottum;
+    width: 410px;
+    height: 240px;
+    margin: 10px auto 10px;
+    clear: both;
 }
 
 /* About */
@@ -175,7 +184,9 @@ hr.small {
 /* Services */
 
 .services {
-    opacity: 1;
+ 
+    color: #00BFFF;
+    background: #fff;
     padding: 20px 0;
     
 }
