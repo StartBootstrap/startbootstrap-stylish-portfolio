@@ -237,3 +237,10 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
