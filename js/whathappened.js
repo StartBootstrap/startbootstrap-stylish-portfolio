@@ -10,4 +10,6 @@ $.urlParam = function(name){
         return results[1] || 0;
     }
 };
-console.log($.urlParam('story'));
+var story = $.urlParam('story');
+story = story.replace(/\+/g, " ").replace(/%0D%0/g, " ").replace(/%2C/g, ",").replace(/%3F/g, "?").replace(/%27/g, "'").replace(/%E2%80%94/g, "—");
+console.log(story);
