@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1890db98-4a39-47b9-95f8-72c0412733de" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/science/magnetism/homestyle.css" afterPath="$PROJECT_DIR$/science/magnetism/homestyle.css" />
-    </list>
+    <list default="true" id="1890db98-4a39-47b9-95f8-72c0412733de" name="Default" comment="" />
     <ignored path="utah-k12.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +24,8 @@
       <file leaf-file-name="Home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/science/magnetism/Home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875">
-              <caret line="29" column="110" selection-start-line="29" selection-start-column="110" selection-end-line="29" selection-end-column="110" />
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -36,8 +34,8 @@
       <file leaf-file-name="homestyle.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/science/magnetism/homestyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41327125">
-              <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+            <state vertical-scroll-proportion="1.5366706">
+              <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -62,8 +60,8 @@
         <option value="$PROJECT_DIR$/Magnetism/Magnetism.js" />
         <option value="$PROJECT_DIR$/Science/Magnetism/Home.html" />
         <option value="$PROJECT_DIR$/Science/Magnetism/homestyle.css" />
-        <option value="$PROJECT_DIR$/science/magnetism/Home.html" />
         <option value="$PROJECT_DIR$/science/magnetism/homestyle.css" />
+        <option value="$PROJECT_DIR$/science/magnetism/Home.html" />
       </list>
     </option>
   </component>
@@ -361,16 +359,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/science/magnetism/Home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
-          <caret line="29" column="110" selection-start-line="29" selection-start-column="110" selection-end-line="29" selection-end-column="110" />
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/science/magnetism/homestyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41327125">
-          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+        <state vertical-scroll-proportion="1.5366706">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
           <folding />
         </state>
       </provider>

@@ -83,3 +83,8 @@ body {
     background: url("Images/RubMagnet.JPG") no-repeat center center fixed;
     background-size: cover;
 }
+
+.link {
+    background-color: #fff;
+    text-align: right;
+}
