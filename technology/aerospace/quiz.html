@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<body onload="loadItems()">
+<div class="container">
+    <div class="main col-md-12">
+    <button type="button" class="btn btn-success" onclick="nextQues()">Load Test</button>
+        <div id="output">
+            <div id="picture"></div>
+            <ul>
+                <li id="a" class="answers" onclick="answer('a'); nextQues()"></li>
+                <li id="b" class="answers" onclick="answer('b'); nextQues()"></li>
+                <li id="c" class="answers" onclick="answer('c'); nextQues()"></li>
+                <li id="d" class="answers" onclick="answer('d'); nextQues()"></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<a href="main.html">Back</a>
+<script src="js.js"></script>
+</body>
+</html>
