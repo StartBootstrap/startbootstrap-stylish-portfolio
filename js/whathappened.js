@@ -1,8 +1,13 @@
 /**
  * Created by i68066 on 11/16/15.
  */
-$('#myForm').submit(function(e){
-    e.preventDefault();
-    var url = $(this).attr('action')+'?'+$('#myForm').serialize();
-    $('#demo').html('<a href="'+url+'"> Link </a>');
-});
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+        return null;
+    }
+    else{
+        return results[1] || 0;
+    }
+};
+console.log($.urlParam('story'));
