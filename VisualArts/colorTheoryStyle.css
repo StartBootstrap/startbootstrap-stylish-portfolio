@@ -1,0 +1,29 @@
+* {
+    background-color: #edf2f5;
+}
+
+div {
+    cursor: pointer;
+    -webkit-box-shadow: inset 0px 0px 37px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 37px -10px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 37px -10px rgba(0,0,0,0.75);
+
+    text-align: center;
+    padding: 30px;
+}
+
+#box1, #box2 {
+    border: 1px solid black;
+    Width: 40%;
+    min-height: 290px;
+}
+
+#colorValueBox {
+    min-height: 120px;
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+}
+#colorValue1, #colorValue2, #colorValue3, #colorValue4 {
+    min-height: 100px;
+}
