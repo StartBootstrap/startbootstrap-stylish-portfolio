@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
 
+    <meta charset="UTF-8">
+    <title>Color Theory Interactive Quiz</title>
+    <link rel="stylesheet" type="text/css" href="colorTheoryStyle.css">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body onload="loadColors()">
+<div class="row">
+    <div class="col-xs-6">
+
+        <div class="col-xs-3" id="box1"><h1>Box1</h1></div>
+
+        <div class="col-xs-3" id="box2"><h1>Box2</h1></div>
+
+        <h1>=</h1>
+    </div>
+    <div class="col-xs-6">
+        <div class="col-xs-4" id="colorValueBox">
+            <h3>Choose resulting color if box 1 and box 2 are mixed</h3>
+            <div class="col-xs-6" id="colorValue1" onclick="checkColor(0)"></div>
+            <div class="col-xs-6" id="colorValue2" onclick="checkColor(1)"></div>
+            <div class="col-xs-6" id="colorValue3" onclick="checkColor(2)"></div>
+            <div class="col-xs-6" id="colorValue4" onclick="checkColor(3)"></div>
+        </div>
+    </div>
+</div>
+<script src="colorTheoryApp.js"></script>
 </body>
 </html>
