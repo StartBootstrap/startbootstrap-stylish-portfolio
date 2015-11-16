@@ -10,3 +10,4 @@ $.urlParam = function(name){
         return results[1] || 0;
     }
 };
+console.log($.urlParam('story'));
