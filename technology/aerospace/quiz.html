@@ -7,17 +7,18 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<body onload="loadItems()">
+<body onload="loadItems(); nextQues()">
+<button type="button" class="btn btn-success" onclick="nextQues()">Load Test</button>
+
 <div class="container">
-    <div class="main col-md-12">
-    <button type="button" class="btn btn-success" onclick="nextQues()">Load Test</button>
+    <div class="main container">
         <div id="output">
-            <div id="picture"></div>
+            <div class="col-md-12" id="picture"></div>
             <ul>
-                <li id="a" class="answers" onclick="answer('a'); nextQues()"></li>
-                <li id="b" class="answers" onclick="answer('b'); nextQues()"></li>
-                <li id="c" class="answers" onclick="answer('c'); nextQues()"></li>
-                <li id="d" class="answers" onclick="answer('d'); nextQues()"></li>
+                <li id="a" class="answers" draggable="true" onclick="answer('a'); nextQues()"></li>
+                <li id="b" class="answers" draggable="true" onclick="answer('b'); nextQues()"></li>
+                <li id="c" class="answers" draggable="true" onclick="answer('c'); nextQues()"></li>
+                <li id="d" class="answers" draggable="true" onclick="answer('d'); nextQues()"></li>
             </ul>
         </div>
 

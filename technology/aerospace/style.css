@@ -5,8 +5,8 @@
     width: 500px; height: 500px;
 }
 .answers{
-    width: 300px;
+    width: 300px; list-style-type: none;
 }
-answers:hover{
-    background-color: #717073
+.answers:hover{
+    background-color: #919093
 }
