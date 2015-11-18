@@ -1,8 +1,9 @@
 /**
  * Created by gabedriggs1 on 11/18/15.
  */
-function isEqual(theirEquation,actualAnswer){
-    if (theirEquation == actualAnswer){
+var theirEquation1 = $("#eq1").valueOf();
+function isEqual(){
+    if (theirEquation1 == "f(x)="){
         alert("Nice you got it right!");
     }
     else
@@ -10,4 +11,3 @@ function isEqual(theirEquation,actualAnswer){
         alert("Sorry! Try again :)");
     }
 }
-    
