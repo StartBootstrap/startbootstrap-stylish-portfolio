@@ -1,0 +1,7 @@
+.anglebox {
+    min-height: 300px;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding-top: 100px;
+    border: 1px solid black;
+}
