@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/2.4.1/math.min.js"></script>
 
     <!-- load http://maurizzzio.github.io/function-plot/ -->
@@ -30,13 +30,48 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color: #cdcacf">
 <div class="container-fluid">
+    <div class="row" style="text-align: center"><h1>INTRUCTIONS:</h1><h3>Find the equation with the given table and then insert it in the input box</h3><br> </div>
     <div class="row">
         <div class="col-lg-6">
             <form id="form">
 
                 <h3>Question #1</h3><br><br>
+                <div class="container col-lg-3" style="text-align: center" >
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th  style="text-align: center">   X</th>
+                            <th  style="text-align: center">   Y</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="success">
+                            <td>0</td>
+                            <td>0</td>
+
+
+                        </tr>
+                        <tr class="danger">
+                            <td>1</td>
+                            <td>2</td>
+
+                        </tr>
+                        <tr class="info">
+                            <td>2</td>
+                            <td>4</td>
+
+                        </tr>
+                        <tr class="success">
+                            <td>3</td>
+                            <td>6</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <label for="eq">Enter an equation:</label>
                 <input type="text" id="eq" value="f(x)=x" />
                 <input type="submit" value="Draw" />
@@ -48,8 +83,42 @@
             <form id="form1">
 
                 <h3>Question #2</h3><br><br>
+                <div class="container col-lg-3" style="text-align: center" >
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th  style="text-align: center">   X</th>
+                            <th  style="text-align: center">   Y</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="success">
+                            <td>0</td>
+                            <td>0</td>
+
+
+                        </tr>
+                        <tr class="danger">
+                            <td>1</td>
+                            <td>1</td>
+
+                        </tr>
+                        <tr class="info">
+                            <td>2</td>
+                            <td>2</td>
+
+                        </tr>
+                        <tr class="success">
+                            <td>3</td>
+                            <td>3</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <label for="eq">Enter an equation:</label>
-                <input type="text" id="eq1" value="f(x)=x"/>
+                <input type="text" id="eq1" value="f(x)=x" />
                 <input type="submit" value="Draw" />
             </form>
 
@@ -108,6 +177,6 @@
     draw();
     draw2();
 </script>
-<script src="graphs.js"></script>
+
 </body>
 </html>
