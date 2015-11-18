@@ -1,0 +1,12 @@
+.main{
+    border: solid black 1px; height: 800px;
+}
+.picture{
+    width: 500px; height: 600px;
+}
+.answers{
+    width: 300px; list-style-type: none; height: 35px; font-size: x-large; text-align: center;
+}
+.answers:hover{
+    background-color: #919093
+}
