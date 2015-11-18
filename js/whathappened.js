@@ -53,6 +53,8 @@ $(function () {
 		$('#sortable').append('<div class="ui-state-default"><i class="ui-icon ui-icon-arrowthick-2-n-s"></i>' + sentence[i] + '</div>')
 	}
 
+	history.pushState({}, '', 'whathappenednext.html' );
+
 });
 
 function correctSequence (){
