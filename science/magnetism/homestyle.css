@@ -79,7 +79,7 @@
     padding-top: 15px;
     font-size: 40px;
 }
-body {
+#magBody {
     background: url("images/RubMagnet.JPG") no-repeat center center fixed;
     background-size: cover;
 }
