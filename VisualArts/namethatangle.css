@@ -1,8 +1,8 @@
 .anglebox {
-    min-height: 300px !important;
+    height: 400px !important;
     background-color: cornflowerblue;
     text-align: center;
-    padding-top: 100px;
+    padding: 20px;
     border: 1px solid black;
 }
 #feedback {
