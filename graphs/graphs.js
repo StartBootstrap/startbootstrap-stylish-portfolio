@@ -3,7 +3,7 @@
  */
 <<<<<<< Updated upstream
 function isEqual(){
-    var answer = document.getElementById("eq").value;
+    var answer = $("#eq").val();
     if (answer == "f(x)=2x"){
         alert("Nice you got it right!");
     }
@@ -13,7 +13,7 @@ function isEqual(){
     }
 }
 function isEqual2(){
-    var answer2 = document.getElementById("eq1").value;
+    var answer2 = $("#eq1").val();
     if (answer2 == "f(x)=3x"){
 =======
 
