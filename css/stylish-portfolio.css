@@ -260,3 +260,10 @@ footer {
     text-align: center;
     margin-top: 50px;
 }
+
+.engIndex {
+    background-image: url("../img/DeathtoStock_Creative%20Community6.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
