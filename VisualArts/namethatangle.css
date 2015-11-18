@@ -9,6 +9,7 @@
     border: 1px solid white;
 }
 #feedback {
+    background-color: whitesmoke;
     text-align: center;
     font-size: 50px;
     min-height: 100px;
