@@ -1,0 +1,11 @@
+1) Fuselage
+2) Wings
+3) Engine
+4) Horizontal Stabilizer
+5) Vertical Stabilizer
+6) Aileron
+7) Elevator
+8) Cockpit
+9) Roll
+10) Pitch
+11) Yaw
