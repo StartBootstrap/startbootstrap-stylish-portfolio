@@ -1,11 +1,8 @@
-
-
-var numWrong = 0;
 var numRight = 0;
 
 var a1 = 0, a2 = 0, a3 = 0, a4 = 0, a5 = 0, a6 = 0;
 
-function Answer(n) {
+function Answer() {
     var input1 = document.getElementById("input1").value;
     var input2= document.getElementById("input2").value;
     var input3 = document.getElementById("input3").value;
@@ -71,11 +68,14 @@ function Answer(n) {
     } else {
         a6 = 0;
     }
-    document.getElementById("feedback").innerHTML = "right: " + (a1 + a2 + a3 + a4 + a5 + a6) + "/ 6";
-    console.log("test");
+    numRight = (a1+a2+a3+a4+a5+a6);
+    document.getElementById("feedback").innerHTML = "right: " + numRight + "/ 6";
 
-    if (a1==1 && a2==1 && a3==1 && a4==1 && a5==1 && a6==1) {
+    if (numRight == 6) {
         $('#feedback').css('background-color', '#4EED5A');
+    }
+    if (numRight < 6) {
+        $('#feedback').css('background-color', 'whitesmoke');
     }
 }
 window.setInterval(Answer(), 100);
