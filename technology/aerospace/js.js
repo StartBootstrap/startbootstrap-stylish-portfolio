@@ -83,6 +83,7 @@ function loadItems(){
     }
     wrong = [];
     response = [];
+    allRight = true;
     nextQues();
 }
 
