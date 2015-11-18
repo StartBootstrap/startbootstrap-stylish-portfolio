@@ -96,5 +96,3 @@ function randomizer() {
         setRandom();
     }
 }
-
-
