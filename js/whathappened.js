@@ -16,6 +16,7 @@ $(function () {
 	$("#sortable").sortable().disableSelection();
 
 	var story = $.urlParam('story');
+	story = decodeURI(story);
 	story = story.replace(/\+/g, " ").replace(/%0D%0A/g, " ").replace(/%2C/g, ",").replace(/%3F/g, "?").replace(/%27/g, "'").replace(/%E2%80%94/g, "—");
 	sentence = story.split(".").map(function (a) {
 		return a.trim()
