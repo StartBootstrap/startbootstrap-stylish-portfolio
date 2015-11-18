@@ -2,13 +2,15 @@
     font-family: "Amatic SC", "Arial", sans-serif;
 }
 .anglebox {
-    height: 410px !important;
+    height: 450px !important;
     background-color: cornflowerblue;
     text-align: center;
     padding: 20px;
     border: 1px solid white;
 }
 #feedback {
+    text-align: center;
+    font-size: 50px;
     min-height: 100px;
     border: 1px solid black;
 }
@@ -24,4 +26,7 @@
 }
 body {
     background-color: whitesmoke;
+}
+input {
+    font-size: 35px !important;
 }

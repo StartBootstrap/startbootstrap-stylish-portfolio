@@ -71,7 +71,7 @@ function Answer(n) {
     } else {
         a6 = 0;
     }
-    document.getElementById("feedback").innerHTML = "right:" + (a1 + a2 + a3 + a4 + a5 + a6) + "/ 6";
+    document.getElementById("feedback").innerHTML = "right: " + (a1 + a2 + a3 + a4 + a5 + a6) + "/ 6";
     console.log("test");
 }
 window.setInterval(Answer(), 100);
