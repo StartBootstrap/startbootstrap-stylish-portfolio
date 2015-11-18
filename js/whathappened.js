@@ -20,9 +20,13 @@ $(function () {
 	sentence = story.split(".").map(function (a) {
 		return a.trim()
 	});
-	for (var i = 0; i < sentence.length - 1; i++) {
+
+	sentence.pop();
+
+	for (var i = 0; i < sentence.length; i++) {
 		$('#sortable').append('<div class="ui-state-default"><i class="ui-icon ui-icon-arrowthick-2-n-s"></i>' + sentence[i] + '</div>')
 	}
+
 	console.log(sentence);
 	console.log(story);
 
