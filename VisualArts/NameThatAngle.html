@@ -21,14 +21,14 @@
         <h1>Name that angle <small>label each angle "right", "acute", or "obtuse"</small></h1>
     </div>
     <div class="row">
-        <div class="col-xs-12 col-md-4 anglebox"><img src="img/right.jpg" class="img-rounded img-responsive center-block lightshadow" alt="right angle" width="304" height="236"><br><br><h3>Right Angle</h3><input type="text" name="angle1" id="input1" size="45"></div>
-        <div class="col-xs-12 col-md-4 anglebox"><img src="img/acute.jpg" class="img-rounded img-responsive center-block lightshadow" alt="acute angle" width="304" height="236"><br><br><h3>Acute Angle</h3><input type="text" name="angle1" id="input2" size="45"></div>
-        <div class="col-xs-12 col-md-4 anglebox"><img src="img/obtuse1.jpg" class="img-rounded img-responsive center-block lightshadow" alt="obtuse angle" width="304" height="236"><br><br><h3>Obtuse Angle</h3><input type="text" name="angle1" id="input3" size="45"></div>
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/right.jpg" class="img-rounded img-responsive center-block lightshadow" alt="right angle" width="304" height="236"><br><br><h3>Right Angle</h3><input onblur="Answer(1)" type="text" name="angle1" id="input1" size="45"></div>
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/acute.jpg" class="img-rounded img-responsive center-block lightshadow" alt="acute angle" width="304" height="236"><br><br><h3>Acute Angle</h3><input onblur="Answer(2)" type="text" name="angle1" id="input2" size="45"></div>
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/obtuse1.jpg" class="img-rounded img-responsive center-block lightshadow" alt="obtuse angle" width="304" height="236"><br><br><h3>Obtuse Angle</h3><input onblur="Answer(3)" type="text" name="angle1" id="input3" size="45"></div>
     </div>
     <div class="row">
-        <div class="col-xs-12 col-md-4 anglebox"><img src="img/acute2.jpg" class="img-rounded img-responsive center-block lightshadow" alt="acute angle" width="304" height="236"><h3>Acute Angle</h3><input type="text" name="angle1" id="input4" size="45"></div>
-        <div class="col-xs-12 col-md-4 anglebox"><img src="img/obtuse2.jpg" class="img-rounded img-responsive center-block lightshadow" alt="obtuse angle" width="304" height="236"><br><br><br><h3>Obtuse Angle</h3><input type="text" name="angle1" id="input5" size="45"></div>
-        <div class="col-xs-12 col-md-4 anglebox"><img src="img/right2.jpg" class="img-rounded img-responsive center-block lightshadow" alt="obtuse angle" width="304" height="236"><h3>Right Angle</h3><input type="text" name="angle1" id="input6" size="45"></div>
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/acute2.jpg" class="img-rounded img-responsive center-block lightshadow" alt="acute angle" width="304" height="236"><h3>Acute Angle</h3><input onblur="Answer(4)" type="text" name="angle1" id="input4" size="45"></div>
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/obtuse2.jpg" class="img-rounded img-responsive center-block lightshadow" alt="obtuse angle" width="304" height="236"><br><br><br><h3>Obtuse Angle</h3><input onblur="Answer(5)" type="text" name="angle1" id="input5" size="45"></div>
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/right2.jpg" class="img-rounded img-responsive center-block lightshadow" alt="obtuse angle" width="304" height="236"><h3>Right Angle</h3><input onblur="Answer(6)" type="text" name="angle1" id="input6" size="45"></div>
     </div>
     <div class="row">
         <div class="col-xs-12" id="feedback">
@@ -36,5 +36,7 @@
         </div>
     </div>
 </div>
+<script src="namethatangle.js"></script>
 </body>
+
 </html>
