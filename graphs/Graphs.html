@@ -95,7 +95,9 @@
 
     document.getElementById('form').onsubmit = function (event) {
         event.preventDefault();
+
         draw();
+        isEqual();
     };
 
     document.getElementById('form1').onsubmit = function (event) {
