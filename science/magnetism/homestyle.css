@@ -88,3 +88,15 @@ body {
     background-color: #fff;
     text-align: right;
 }
+
+.intro-list {
+    text-align: left;
+}
+
+.myList {
+    box-shadow: none !important;
+}
+
+#magBtn {
+
+}
