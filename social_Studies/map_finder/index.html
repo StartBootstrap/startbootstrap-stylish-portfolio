@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Continents</h2>
+    <p>Please select continent and category</p>
+
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Continent
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">North America</a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/naRel.gif')">Religion</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/naPol.png')">political</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/naPop.gif')">population density</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Even More..</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">3rd level</a></li>
+                            <li><a href="#">3rd level</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">South America</a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/saRel.jpg')">Religion</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/saPol.png')">political</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/saPop.png')">population density</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Even More..</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">3rd level</a></li>
+                            <li><a href="#">3rd level</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Europe</a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/eRel.jpg')">Religion</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/eEth.jpg')">Ethnicity</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/ePol.png')">political</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/ePop.gif')">population density</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Even More..</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">3rd level</a></li>
+                            <li><a href="#">3rd level</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Asia</a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/aRel.jpg')">Religion</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/aPol.jpg')">political</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/aPop.jpg')">population density</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Even More..</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">3rd level</a></li>
+                            <li><a href="#">3rd level</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a onclick="africa_fun" tabindex="-1" href="#">Africa</a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/afRel.jpg')">Religion</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/afPol.jpg')">political</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/afPop.jpg')">population density</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Even More..</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">3rd level</a></li>
+                            <li><a href="#">3rd level</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Australia</a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/auRel.jpg')">Religion</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/auPol.jpg')">Political</a></li>
+                    <li><a tabindex="-1" href="#" onclick="getMap('img/auPop.jpg')">Population density</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Even More..</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">3rd level</a></li>
+                            <li><a href="#">3rd level</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Antarctica</a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">Religion</a></li>
+                    <li><a tabindex="-1" href="#">Ethnicity</a></li>
+                    <li><a tabindex="-1" href="#">political</a></li>
+                    <li><a tabindex="-1" href="#">population density</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Even More..</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">3rd level</a></li>
+                            <li><a href="#">3rd level</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<br>
+<br>
+<div class="container" id="output">
+
+
+</div>
+
+<script src="scripting.js"></script>
+</body>
+</html>
