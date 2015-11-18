@@ -3,7 +3,7 @@
  */
 function isEqual(){
     var answer = document.getElementById("eq").value;
-    if (answer == "f(x)=x"){
+    if (answer == "f(x)=2x"){
         alert("Nice you got it right!");
     }
     else
@@ -12,8 +12,8 @@ function isEqual(){
     }
 }
 function isEqual2(){
-    var answer2 = document.getElementById("eq1").value;;
-    if (answer2 == "f(x)=x"){
+    var answer2 = document.getElementById("eq1").value;
+    if (answer2 == "f(x)=3x"){
         alert("Nice you got it right!");
     }
     else

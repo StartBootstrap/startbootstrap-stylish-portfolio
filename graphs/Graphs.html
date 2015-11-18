@@ -101,17 +101,17 @@
                         </tr>
                         <tr class="danger">
                             <td>1</td>
-                            <td>1</td>
+                            <td>3</td>
 
                         </tr>
                         <tr class="info">
                             <td>2</td>
-                            <td>2</td>
+                            <td>6</td>
 
                         </tr>
                         <tr class="success">
                             <td>3</td>
-                            <td>3</td>
+                            <td>9</td>
 
                         </tr>
                         </tbody>
@@ -171,12 +171,13 @@
     document.getElementById('form1').onsubmit = function (event) {
         event.preventDefault();
         draw2();
+        isEqual2()
     };
 
 
     draw();
     draw2();
 </script>
-
+<script src="graphs.js"></script>
 </body>
 </html>
