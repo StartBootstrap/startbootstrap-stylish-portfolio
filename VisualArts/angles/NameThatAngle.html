@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Name that angle</title>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="namethatangle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container shadow">
+    <div class="page-header">
+        <h1>Name that angle <small> - label each angle "right", "acute", or "obtuse"</small></h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/right.jpg" class="img-rounded img-responsive center-block lightshadow" alt="right angle" width="304" height="236"><br><br><input onblur="Answer()" type="text" name="angle1" id="input1" size="35"></div>
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/acute.jpg" class="img-rounded img-responsive center-block lightshadow" alt="acute angle" width="304" height="236"><br><br><input onblur="Answer()" type="text" name="angle1" id="input2" size="35"></div>
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/obtuse1.jpg" class="img-rounded img-responsive center-block lightshadow" alt="obtuse angle" width="304" height="236"><br><br><input onblur="Answer()" type="text" name="angle1" id="input3" size="35"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/acute2.jpg" class="img-rounded img-responsive center-block lightshadow" alt="acute angle" width="304" height="236"><br><input onblur="Answer()" type="text" name="angle1" id="input4" size="35"></div>
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/obtuse2.jpg" class="img-rounded img-responsive center-block lightshadow" alt="obtuse angle" width="304" height="236"><br><br><br><input onblur="Answer()" type="text" name="angle1" id="input5" size="35"></div>
+        <div class="col-xs-12 col-md-4 anglebox"><img src="img/right2.jpg" class="img-rounded img-responsive center-block lightshadow" alt="obtuse angle" width="304" height="236"><br><input onblur="Answer()" type="text" name="angle1" id="input6" size="35"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" id="feedback">
+
+        </div>
+    </div>
+</div>
+<script src="namethatangle.js"></script>
+</body>
+
+</html>
