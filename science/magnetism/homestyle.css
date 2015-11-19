@@ -79,8 +79,8 @@
     padding-top: 15px;
     font-size: 40px;
 }
-body {
-    background: url("images/RubMagnet.JPG") no-repeat center center fixed;
+#matterBody {
+    background: url("../matter/images/saltLake.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
