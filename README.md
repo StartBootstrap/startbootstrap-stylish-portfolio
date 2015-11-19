@@ -1,4 +1,4 @@
-# Utah K12 - [http://bit.ly/UtahK12](http://bit.ly/Utah-K12)
+# Utah K12 - [http://bit.ly/UtahK12](http://bit.ly/UtahK12)
 
 
 ## Bugs and Issues
