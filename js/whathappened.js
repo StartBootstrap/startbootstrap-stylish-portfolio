@@ -67,8 +67,3 @@ function correctSequence (){
 	story = story.replace(/\s/g, '');
 	story == answer ? alert('yay!') : '';
 }
-
-
-//TODO see if we can stay on the same page but take out the "story" parameters
-//TODO actually randomize the sentences by popping and unshifting everyother sentence
-//TODO make a check for the correct sequence
