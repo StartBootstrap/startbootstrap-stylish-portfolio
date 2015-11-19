@@ -1,0 +1,33 @@
+* {
+    font-family: "Amatic SC", "Arial", sans-serif;
+}
+.anglebox {
+    height: 450px !important;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid white;
+}
+#feedback {
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+    min-height: 100px;
+    border: 1px solid black;
+}
+.shadow {
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.30);
+}
+.lightshadow {
+    -webkit-box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.75);
+}
+body {
+    background-color: whitesmoke;
+}
+input {
+    font-size: 35px !important;
+}
