@@ -129,6 +129,9 @@ img#experiments:hover {
 #matterBody {
     background: url("../images/matter/saltLake.jpg") no-repeat center center fixed;
 }
+#CompassBody {
+    background: url("../images/Compass/WorldMapandCompass.jpg") no-repeat center center fixed;
+}
 #magBody {
     background: url("../images/magnetism/RubMagnet.JPG") no-repeat center center fixed;
     background-size: cover;
