@@ -35,52 +35,66 @@ function nextQues(){
     var pic = document.getElementById("picture");
     var num = document.getElementById("index");
     var help = document.getElementById("help");
+    //Send the options to the answers elements
     var a = document.getElementById("a");
     var b = document.getElementById("b");
     var c = document.getElementById("c");
     var d = document.getElementById("d");
+    //Iterate through current questions
     for (var i = 0; i < selected.length; i++){
         if (i == current && current <= (selected.length - 1)){
             pic.innerHTML = "<img class='picture col-md-12' src='" + questions[selected[i]].pic + "'>";
+            //Retrieve the answers for the current questions
             a.innerHTML = "A.  " + questions[selected[i]].a;
             b.innerHTML = "B.  " + questions[selected[i]].b;
             c.innerHTML = "C.  " + questions[selected[i]].c;
             d.innerHTML = "D.  " + questions[selected[i]].d;
+            //Show the current question index out of the total number of questions
             num.innerHTML = "Question " + (current + 1) + " out of " + selected.length;
         }
     }
+    //If we finished the last question, show that airplane picture
     if (current > (selected.length - 1)){
         pic.innerHTML = "<img class='picture col-md-12' src='images/airplane.jpg'>";
         a.innerHTML = "A.";
         b.innerHTML = "B.";
         c.innerHTML = "C.";
         d.innerHTML = "D.";
+        //If one of the questions does not match the right answer, allRight = false, send the index of the wrong answer to the 'wrong' array
         for (var i = 0; i < answers.length; i++){
             if (answers[i] !== response[i]){
                 allRight = false;
                 wrong.push(i + 1);
             }
         }
+        //If all the quesitons are right, send the appropriate alert
         if (allRight == true){
             window.alert("All answers are right!");
         }
+        //If all of the questions are wrong, send the appropriate alert
         if (allRight == false){
             window.alert("Your answer for question(s): " + wrong.join(", ") + " were not correct");
         }
     }
+    //Reset the help box
     help.innerHTML = "";
+    //Move to next question
     current++;
 }
 function storeQues(){
+    //Stores the names of each question
     sessionStorage.setItem("selected", selected);
 }
 function loadItems(){
+    //Starts up the quiz
     var x = 0;
     current = 0;
     selected = [];
     for (x in questions){
+        //Push all of the questions in the 'questions' object to the selected array
         selected.push(x);
     }
+    //Reset responses and wrong answers
     wrong = [];
     response = [];
     allRight = true;
@@ -88,10 +102,12 @@ function loadItems(){
 }
 
 function answer(x){
+    //Pushes your answer to the response array
     response.push(x);
 }
 
 function giveHelp(){
+    //Send the description of the current question to the "help" div
     var help = document.getElementById("help");
     for (var i = 0; i < selected.length; i++){
         if (i == current && current <= (selected.length - 1)){
