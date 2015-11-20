@@ -29,6 +29,18 @@ body {
     font-weight: 700;
 }
 
+a:visited {
+    color: #2c7aaf;
+}
+
+a:hover {
+    color: #3a98dc
+}
+
+a:active {
+    color: #2c7aaf
+}
+
 /* Custom Button Styles */
 
 .btn-dark {
@@ -266,4 +278,36 @@ footer {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.body {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 70%;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: #ffffff;
+
+}
+
+.body-note {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 60%;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: #ffffff;
+
+}
+
+.body-link {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 20%;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.53);
 }
