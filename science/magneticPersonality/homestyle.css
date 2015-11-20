@@ -1,13 +1,4 @@
-#mainPage {
-    background-image: url("images/magneticbg.jpg");
-    background-size: 100%;
-}
-#pictureBox{
-    border: double;
-    height: 50%;
-    width: 100%;
-    background-color: white;
-}
+
 .hiddenStepInfo {
     display: none;
 }
