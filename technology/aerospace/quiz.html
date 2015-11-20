@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<body onload="loadItems()">
+<button type="button" class="btn btn-success" onclick="loadItems()">Reload Test</button>
+
+<div class="container">
+    <div class="main container">
+        <div class="container" id="output">
+            <div id="index">
+            </div>
+            <div class="col-md-12" id="picture"></div>
+            <br>
+            <div>
+                <br>
+                <br>
+                <ul class="col-md-12">
+                    <br>
+                    <li id="a" class="answers col-md-6" draggable="true" onclick="answer('a'); nextQues()"></li>
+                    <li id="b" class="answers col-md-6" draggable="true" onclick="answer('b'); nextQues()"></li>
+                    <br>
+                    <br>
+                    <li id="c" class="answers col-md-6" draggable="true" onclick="answer('c'); nextQues()"></li>
+                    <li id="d" class="answers col-md-6" draggable="true" onclick="answer('d'); nextQues()"></li>
+                    <br>
+                    <br>
+                    <a class="" draggable="true" onclick="giveHelp()">Help!</a>
+                </ul>
+                <br>
+                <br>
+                <span id="help"></span>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="js.js"></script>
+</body>
+</html>
