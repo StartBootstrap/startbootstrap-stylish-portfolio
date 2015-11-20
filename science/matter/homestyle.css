@@ -79,28 +79,12 @@
     padding-top: 15px;
     font-size: 40px;
 }
-
-#matterBody {
-    background: url("../matter/images/saltLake.jpg") no-repeat center center fixed;
-
-#magBody {
-    background: url("images/RubMagnet.JPG") no-repeat center center fixed;
+body {
+    background: url("images/saltLake.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
 .link {
     background-color: #fff;
     text-align: right;
-}
-
-.intro-list {
-    text-align: left;
-}
-
-.myList {
-    box-shadow: none !important;
-}
-
-#magBtn {
-
 }
