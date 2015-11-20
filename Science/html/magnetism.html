@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magnetism is Fun!!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/homestyle.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="../js/homestyle.js"></script>
+</head>
+<body id="magBody">
+<div class="container" style="margin-top: 100px; margin-bottom: 100px;">
+    <div class="row">
+        <div class="link col-md-3 col-md-offset-9">
+            <h4><a href="http://www.uen.org/core/science/sciber/sciber5/stand-3/types.shtml">Link to Original Lesson Plan</a></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="progress" id="progress1">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+            </div>
+            <span class="progress-type">Overall Progress</span>
+            <span class="progress-completed">0%</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row step">
+            <div id="div1" class="col-md-2 activestep" onclick="javascript: resetActive(event, 0, 'step-1');">
+                <span class="fa fa-cloud-download"></span>
+                <p>Introduction</p>
+            </div>
+            <div class="col-md-2" onclick="javascript: resetActive(event, 20, 'step-2');">
+                <span class="fa fa-pencil"></span>
+                <p>Step 1</p>
+            </div>
+            <div class="col-md-2" onclick="javascript: resetActive(event, 40, 'step-3');">
+                <span class="fa fa-refresh"></span>
+                <p>Step 2</p>
+            </div>
+            <div class="col-md-2" onclick="javascript: resetActive(event, 60, 'step-4');">
+                <span class="fa fa-dollar"></span>
+                <p>Step 3</p>
+            </div>
+            <div class="col-md-2" onclick="javascript: resetActive(event, 80, 'step-5');">
+                <span class="fa fa-cloud-upload"></span>
+                <p>Step 4</p>
+            </div>
+            <div id="last" class="col-md-2" onclick="javascript: resetActive(event, 100, 'step-6');">
+                <span class="fa fa-star"></span>
+                <p>Conclusion</p>
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content step activeStepInfo" id="step-1">
+        <div class="col-xs-12">
+            <div class="col-md-12 well text-center">
+                <h1>Get Started</h1>
+                <h3 class="underline">Presentation</h3>
+                <br/>
+
+                <p>Magnets are everywhere. If you have ever used a computer, microwave oven, copy machine or stereo speakers, you have used magnets!</p>
+                <p>Magnets can also be used to make electricity.</p>
+                <p>Think about it!</p>
+                <p>What is the biggest magnet around? Use the hints below to figure it out and then highlight the box to see if you were correct.</p>
+                <div class="col-md-7 col-md-offset-5 intro-list">
+                    <ul class="list-group myList">
+                        <li>It is bigger than a bread box.</li>
+                        <li>It is bigger than a whale.</li>
+                        <li>It is bigger than a mountain.</li>
+                        <li>It is bigger than North America.</li>
+                        <li>You live on it!</li>
+                    </ul>
+                </div>
+                <h4>What is the biggest magnet?</h4>
+                <h3>THE EARTH!</h3>
+                <h4>The Earth is a huge magnet.</h4>
+                <h5>Define it!</h5>
+                <p>What is a magnet, anyway?</p>
+                <p>A magnet is something that has magnetic force.</p>
+                <p>The next question is "What is a magnetic force?" A magnetic force attracts iron and steel.</p>
+                <p>Magnets are materials that attract iron and steel.</p>
+                <p>There are many different types of magnets. Natural magnets occur naturally in nature.
+                    The mineral magnetite is a natural magnet. It can attract iron.</p>
+                <h3 class="underline">Make a magnet!</h3>
+                <p>A temporary magnet is a magnet that has magnetic force for a short time. You can make a temporary magnet.</p>
+
+                <h4>Materials:</h4>
+                    
+                        <br>Large nail with a small head (Reminder: Nails are sharp - be careful!)<br><br>
+                        Bar magnet<br><br>
+                        Straight pins
+
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content step hiddenStepInfo" id="step-2">
+        <div class="col-xs-12">
+            <div class="col-md-12 well text-center">
+                <h1>STEP 1</h1>
+                <h3 class="underline">Instructions</h3>
+                Rub the nail with one end of a bar magnet, and make sure to rub the nail in the same direction each time.
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content step hiddenStepInfo" id="step-3">
+        <div class="col-xs-12">
+            <div class="col-md-12 well text-center">
+                <h1>STEP 2</h1>
+                <h3 class="underline">Instructions</h3>
+                Using the other end of the magnet, stroke the opposite end of the nail several times.
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content step hiddenStepInfo" id="step-4">
+        <div class="col-xs-12">
+            <div class="col-md-12 well text-center">
+                <h1>STEP 3</h1>
+                <h3 class="underline">Instructions</h3>
+                Slowly move the nail near some lightweight metal objects such as straight pins.
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content step hiddenStepInfo" id="step-5">
+        <div class="col-xs-12">
+            <div class="col-md-12 well text-center">
+                <h1>STEP 4</h1>
+                <h3 class="underline">Instructions</h3>
+                Record what happens. Why do you think that some metal objects will not be attracted to magnets?
+                <textarea class="form-control" id="magInput" cols="30" rows="10"></textarea>
+                <button type="button" class="btn pull-right btn-primary" onclick="#" disabled="disabled" id="magBtn">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content step hiddenStepInfo" id="step-6">
+        <div class="col-xs-12">
+            <div class="col-md-12 well text-center">
+                <h1>Conclusion</h1>
+                <h3 class="underline">It's Permanent</h3>
+                Permanent magnets keep their magnetic force. The magnets that you used to magnetize the needle or paper
+                clip, the magnet used to stick reminders to your refrigerator, and the magnets that engineers use in
+                dams to make electricity are examples of permanent magnets.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
