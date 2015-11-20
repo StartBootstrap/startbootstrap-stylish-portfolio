@@ -1,0 +1,80 @@
+.hiddenStepInfo {
+	display: none;
+}
+
+.activeStepInfo {
+	display: block !important;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.step {
+	margin-top: 27px;
+}
+
+.progress {
+	position: relative;
+	height: 25px;
+}
+
+.progress > .progress-type {
+	position: absolute;
+	left: 0px;
+	font-weight: 800;
+	padding: 3px 30px 2px 10px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress > .progress-completed {
+	position: absolute;
+	right: 0px;
+	font-weight: 800;
+	padding: 3px 10px 2px;
+}
+
+.step {
+	text-align: center;
+}
+
+.step .col-md-2 {
+	background-color: #fff;
+	border: 1px solid #C0C0C0;
+	border-right: none;
+}
+
+.step .col-md-2:last-child {
+	border: 1px solid #C0C0C0;
+}
+
+.step .col-md-2:first-child {
+	border-radius: 5px 0 0 5px;
+}
+
+.step .col-md-2:last-child {
+	border-radius: 0 5px 5px 0;
+}
+
+.step .col-md-2:hover {
+	color: #F58723;
+	cursor: pointer;
+}
+
+.step .activestep {
+	color: #F58723;
+	height: 100px;
+	margin-top: -7px;
+	padding-top: 7px;
+	border-left: 6px solid #5CB85C !important;
+	border-right: 6px solid #5CB85C !important;
+	border-top: 3px solid #5CB85C !important;
+	border-bottom: 3px solid #5CB85C !important;
+	vertical-align: central;
+}
+
+.step .fa {
+	padding-top: 15px;
+	font-size: 40px;
+}
