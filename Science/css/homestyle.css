@@ -89,6 +89,11 @@ img {
     height: 30%;
     width: 30%;
 }
+img#scientists {
+    height: 60%;
+    width: 60%;
+}
+
 
 #experiments {
     height: 30%;
