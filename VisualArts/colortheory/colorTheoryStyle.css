@@ -6,6 +6,7 @@
 h3, .jumbotron {
     text-align: center;
     background-color: rgba(0,0,0,0) !important;
+    color: whitesmoke !important;
 }
 .dark {
     background-color: #232323 !important;
@@ -110,4 +111,15 @@ body {
 }
 .rtxt {
     font-size: 40px;
+}
+#credit {
+    text-align: right;
+    margin-right: 15px;
+}
+#colorStar {
+    width: 400px;
+    height: 400px;
+}
+#colorStarBox {
+    text-align: center;
 }

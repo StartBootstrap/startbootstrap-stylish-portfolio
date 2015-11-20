@@ -21,7 +21,7 @@ $(function () {
 
 	story = $.urlParam('story');
 	story = decodeURI(story);
-	story = story.replace(/\+/g, " ").replace(/%0D%0A/g, " ").replace(/%2C/g, ",").replace(/%3F/g, "?").replace(/%27/g, "'").replace(/%E2%80%94/g, "—");
+	story = story.replace(/\+/g, " ").replace(/%0D%0A/g, " ").replace(/%2C/g, ",").replace(/%3F/g, "?").replace(/%27/g, "'").replace(/%E2%80%94/g, "—").replace(/%3A/g, ":");
 	sentence = story.split(".").map(function (a) {
 		return a.concat(".").trim()
 	});
@@ -67,8 +67,3 @@ function correctSequence (){
 	story = story.replace(/\s/g, '');
 	story == answer ? alert('yay!') : '';
 }
-
-
-//TODO see if we can stay on the same page but take out the "story" parameters
-//TODO actually randomize the sentences by popping and unshifting everyother sentence
-//TODO make a check for the correct sequence
