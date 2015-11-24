@@ -89,6 +89,11 @@ img {
     height: 30%;
     width: 30%;
 }
+img#scientists {
+    height: 60%;
+    width: 60%;
+}
+
 
 #experiments {
     height: 30%;
@@ -133,7 +138,7 @@ img#experiments:hover {
     background: url("../images/Compass/WorldMapandCompass.jpg") no-repeat center center fixed;
 }
 #magBody {
-    background: url("../images/magnetism/RubMagnet.JPG") no-repeat center center fixed;
+    background: url("../images/magnetism/lightning2.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -164,3 +169,4 @@ img#experiments:hover {
     width: 100%;
     background-color: white;
 }
+
