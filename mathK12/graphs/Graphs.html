@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/2.4.1/math.min.js"></script>
+
+    <!-- load http://maurizzzio.github.io/function-plot/ -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="http://brcdn.org/RbDt4b0Shej4JLF7KBQEilNbIiI.js"></script>
+    <title>Graphs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        input[type=text] {
+            width: 300px;
+        }
+        input {
+            padding: 6px;
+        }
+        body, html, input {
+            font-family: sans-serif;
+            font-size: 11pt;
+
+        }
+        form {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body style="background-color: #cdcacf">
+<div class="container-fluid">
+    <div class="row" style="text-align: center"><h1 style="color: red">INTRUCTIONS:</h1><h3>Find the equation with the given table and then insert it in the input box</h3><br> </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <form id="form">
+
+                <h3>Question #1</h3><br><br>
+                <div class="container col-lg-3" style="text-align: center" >
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th  style="text-align: center">   X</th>
+                            <th  style="text-align: center">   Y</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="success">
+                            <td>0</td>
+                            <td>0</td>
+
+
+                        </tr>
+                        <tr class="danger">
+                            <td>1</td>
+                            <td>2</td>
+
+                        </tr>
+                        <tr class="info">
+                            <td>2</td>
+                            <td>4</td>
+
+                        </tr>
+                        <tr class="success">
+                            <td>3</td>
+                            <td>6</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <label style="color: red;">f(x)= is the same as y=</label><br><label for="eq">Enter an equation:</label>
+                <input type="text" id="eq" value="f(x)=x" />
+                <input type="submit" value="Draw" />
+            </form>
+
+            <div id="plot"></div>
+        </div>
+        <div class="col-lg-6">
+            <form id="form1">
+
+                <h3>Question #2</h3><br><br>
+                <div class="container col-lg-3" style="text-align: center" >
+
+
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th  style="text-align: center">   X</th>
+                            <th  style="text-align: center">   Y</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="success">
+                            <td>0</td>
+                            <td>0</td>
+
+
+                        </tr>
+                        <tr class="danger">
+                            <td>1</td>
+                            <td>3</td>
+
+                        </tr>
+                        <tr class="info">
+                            <td>2</td>
+                            <td>6</td>
+
+                        </tr>
+                        <tr class="success">
+                            <td>3</td>
+                            <td>9</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+               <!--<label style="color:red;">f(x)= is the same as y=</label><br> <label for="eq">Enter an equation:</label>-->
+
+                <label style="color:red;">f(x)= is the same as y=</label><br> <label for="eq">Enter an equation:</label>
+
+                <input type="text" id="eq1" value="f(x)=x" />
+                <input type="submit" value="Draw" />
+            </form>
+
+            <div id="plot1"></div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function draw() {
+        try {
+            functionPlot({
+                target: '#plot',
+                yDomain: [0, 10],
+                xDomain: [0, 10],
+                data: [{
+                    fn: math.eval(document.getElementById('eq').value)
+                }]
+            });
+        }
+        catch (err) {
+            console.log(err);
+
+        }
+    }
+    function draw2() {
+        try {
+            functionPlot({
+                target: '#plot1',
+                yDomain: [0, 10],
+                xDomain: [0, 10],
+                data: [{
+                    fn: math.eval(document.getElementById('eq1').value)
+                }]
+            });
+        }
+        catch (err) {
+            console.log(err);
+
+        }
+    }
+
+    document.getElementById('form').onsubmit = function (event) {
+        event.preventDefault();
+        draw();
+        isEqual();
+    };
+
+    document.getElementById('form1').onsubmit = function (event) {
+        event.preventDefault();
+        draw2();
+        isEqual2()
+    };
+
+
+    draw();
+    draw2();
+</script>
+<script src="graphs.js"></script>
+</body>
+</html>

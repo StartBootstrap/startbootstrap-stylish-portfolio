@@ -1,0 +1,125 @@
+*, .modal, .modal-content {
+    background-color: #232323;
+    font-family: "Raleway", "Arial", "sans-serif";
+    color: whitesmoke;
+}
+h3, .jumbotron {
+    text-align: center;
+    background-color: rgba(0,0,0,0) !important;
+    color: whitesmoke !important;
+}
+.dark {
+    background-color: #232323 !important;
+    font-family: "Raleway", "Arial", "sans-serif" !important;
+    color: whitesmoke !important;
+    text-align: center;
+}
+button {
+    margin: 0 auto !important;
+}
+
+.shadow {
+
+    -webkit-box-shadow: inset 0px 0px 37px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 37px -10px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 37px -10px rgba(0,0,0,0.75);
+
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+}
+#inputColorBox {
+
+    -webkit-box-shadow: 0px 0px 37px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 37px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 37px -10px rgba(0,0,0,0.75);
+    min-height: 300px;
+    margin: 0 auto !important;
+    width: 95%;
+    padding: 19px;
+}
+#box1, #box2 {
+    margin-top: 55px;
+    cursor: pointer;
+    border-radius: 50px;
+    Width: 41%;
+    min-height: 100px;
+    border: 1px solid black;
+}
+
+#colorValueBox {
+    -webkit-box-shadow: 0px 0px 37px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 37px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 37px -10px rgba(0,0,0,0.75);
+    min-height: 300px;
+    width: 95%;
+    margin: 0 auto !important;
+    padding: 20px;
+}
+#colorValue1, #colorValue2, #colorValue3, #colorValue4 {
+    cursor: pointer;
+    min-height: 100px;
+    width: 48%;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+    #equals {
+        margin-top: 100px;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+#plus {
+    font-size: 40px !important;
+    margin-top: 70px !important;
+}
+#equals {
+    font-size: 60px !important;
+    -webkit-box-shadow: 0px 0px 37px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 37px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 37px -10px rgba(0,0,0,0.75);
+}
+.im-centered {
+    margin: auto;
+    max-width: 90%;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) !important;
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) !important;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) !important;
+}
+body {
+    background-color: #232323 !important;
+}
+.colornum {
+    color: black;
+}
+.rtxt {
+    font-size: 40px;
+}
+#credit {
+    text-align: right;
+    margin-right: 15px;
+}
+#colorStar {
+    width: 400px;
+    height: 400px;
+}
+#colorStarBox {
+    text-align: center;
+}

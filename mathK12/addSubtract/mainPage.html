@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+    <style>
+        body{
+            background-image:url("http://i576.photobucket.com/albums/ss204/amie22/math-wallpapers-backgrounds-for-powerpoint.jpg");
+            background-size:cover;
+        }
+    </style>
+</head>
+<body>
+<div class = "container">
+    <br>
+    <br>
+    <div class = "jumbotron" style = "background-color: #31A555">
+    <h1>Adding and Subtracting</h1>
+</div>
+    <div class = "row">
+    <div class = "col-md-4" style="background-color:skyblue;">
+        <span id = "q1">What is 4 + 6?</span>
+        <span>&nbsp; 9&nbsp;<input type="radio" name="q1Answer" id="q1A" onchange="Question1()"/></span>
+        <span>&nbsp; 7&nbsp;<input type="radio" name="q1Answer" id="q1B" onchange="Question1()"/></span>
+        <span>&nbsp;10&nbsp;<input type="radio" name="q1Answer" id="q1C" onchange="Question1()"/></span>
+        <span>&nbsp;11&nbsp;<input type="radio" name="q1Answer" id="q1D" onchange="Question1()"/></span>
+
+    </div>
+
+    <div class = "col-md-4" style="background-color:skyblue;">
+
+        <span id = "q2">What is 7 + 9?</span>
+        <span>&nbsp;13&nbsp;<input type="radio" name="q2Answer"  id="q2A" onchange="Question2()"/></span>
+        <span>&nbsp; 16&nbsp;<input type="radio" name="q2Answer" id="q2B" onchange="Question2()"/></span>
+        <span>&nbsp; 18&nbsp;<input type="radio" name="q2Answer" id="q2C" onchange="Question2()"/></span>
+        <span>&nbsp; 15&nbsp;<input type="radio" name="q2Answer" id="q2D" onchange="Question2()"/></span>
+
+    </div>
+    <div class = "col-md-4" style="background-color:skyblue;">
+        <span id = "q3">What is 10 + 8?</span>
+        &nbsp;17 &nbsp;<input type="radio" name="q3Answer" id="q3A"onchange="Question3()"/>
+        &nbsp; 15&nbsp;<input type="radio" name="q3Answer" id="q3B"onchange="Question3()"/>
+        &nbsp; 20&nbsp;<input type="radio" name="q3Answer" id="q3C"onchange="Question3()"/>
+        &nbsp; 18&nbsp;<input type="radio" name="q3Answer" id="q3D"onchange="Question3()"/>
+
+    </div>
+    </div>
+    <div class = "row">
+    <div class = "col-md-4" style="background-color:skyblue;">
+        <span id = "q4">What is 3 + 5?</span>
+        &nbsp; 8&nbsp;<input type="radio" name="q4Answer"  id="q4A" onchange="Question4()"/>
+        &nbsp; 7&nbsp;<input type="radio" name="q4Answer" id="q4B" onchange="Question4()"/>
+        &nbsp;10&nbsp;<input type="radio" name="q4Answer" id="q4C" onchange="Question4()"/>
+        &nbsp;11&nbsp;<input type="radio" name="q4Answer" id="q4D" onchange="Question4()"/>
+
+    </div>
+
+    <div class = "col-md-8" style="background-color:skyblue;">
+        <span id = "q5">What is 7 + 9?</span>
+        &nbsp;  13&nbsp;<input type="radio" name="q5Answer"  id="q5A"onchange="Question5()"/>
+        &nbsp; 16&nbsp;<input type="radio" name="q5Answer" id="q5B"onchange="Question5()"/>
+        &nbsp; 18&nbsp;<input type="radio" name="q5Answer" id="q5C"onchange="Question5()"/>
+        &nbsp; 15&nbsp;<input type="radio" name="q5Answer" id="q5D"onchange="Question5()"/>
+
+    </div>
+
+    </div>
+    <div class = "row">
+    <div class = "col-md-4" style="background-color:red;" style="color:white;">
+        <span id = "q6" style="color:white;">What is 14 - 6?</span>
+        &nbsp; 7 &nbsp;<input type="radio" name="q6Answer" id="q6A" onchange="qSub1()"/>
+        &nbsp; 9&nbsp;<input type="radio" name="q6Answer"  id="q6B" onchange="qSub1()"/>
+        &nbsp; 8&nbsp;<input type="radio" name="q6Answer"  id="q6C" onchange="qSub1()"/>
+        &nbsp;10&nbsp;<input type="radio" name="q6Answer" id="q6D" onchange="qSub1()"/>
+
+    </div>
+    <div class = "col-md-4" style="background-color:red;" style="color:white;">
+        <span id = "q7" style="color:white;">What is 25 - 7?</span>
+        &nbsp;18 &nbsp;<input type="radio" name="q7Answer" id="q7A" onchange="qSub2()"/>
+        &nbsp; 16&nbsp;<input type="radio" name="q7Answer"  id="q7B" onchange="qSub2()"/>
+        &nbsp; 19&nbsp;<input type="radio" name="q7Answer"  id="q7C" onchange="qSub2()"/>
+        &nbsp; 20&nbsp;<input type="radio" name="q7Answer"  id="q7D" onchange="qSub2()"/>
+
+    </div>
+    <div class = "col-md-4" style="background-color:red;" style="color:white;">
+        <span id = "q8" style="color:white;">   What is 17 - 9?</span>
+        &nbsp;  9 &nbsp;<input type="radio" name="q8Answer" id="q8A" onchange="qSub3()"/>
+        &nbsp; 8&nbsp;<input type="radio" name="q8Answer"  id="q8B" onchange="qSub3()"/>
+        &nbsp; 12&nbsp;<input type="radio" name="q8Answer" id="q8C" onchange="qSub3()"/>
+        &nbsp; 10&nbsp;<input type="radio" name="q8Answer" id="q8D" onchange="qSub3()"/>
+
+    </div>
+    </div>
+    <div class = "row">
+    <div class = "col-md-4" style="background-color:red;" style="color:white;">
+        <span id = "q9" style="color:white;">What is 12 - 4?</span>
+        &nbsp;10&nbsp;<input type="radio" name="q9Answer" id="q9A" onchange="qSub4()"/>
+        &nbsp; 9&nbsp;<input type="radio" name="q9Answer"   id="q9B" onchange="qSub4()"/>
+        &nbsp; 7&nbsp;<input type="radio" name="q9Answer"   id="q9C" onchange="qSub4()"/>
+        &nbsp;  8   &nbsp;<input type="radio" name="q9Answer"   id="q9D" onchange="qSub4()"/>
+
+    </div>
+    <div class = "col-md-8" style="background-color:red;" style="color:white;">
+        <span id = "q10" style="color:white;">What is 18 - 6?</span>
+        &nbsp;10 &nbsp;<input type="radio" name="q10Answer" id="q10A" onchange="qSub5()"/>
+        &nbsp; 7&nbsp;<input type="radio" name="q10Answer"   id="q10B" onchange="qSub5()"/>
+        &nbsp; 11&nbsp;<input type="radio" name="q10Answer"  id="q10C" onchange="qSub5()"/>
+        &nbsp; 12&nbsp;<input type="radio" name="q10Answer"  id="q10D" onchange="qSub5()"/>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+<script src="addSubJs.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Color Theory Interactive Quiz</title>
+    <link rel="stylesheet" type="text/css" href="colorTheoryStyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body onload="setRandom()">
+
+<div class="jumbotron">
+    <h1>Color Mixer</h1>
+    <br>
+
+    <h3>In visual arts, Color Theory defines the guidelines for mixing colors and determining the effects of color
+        combinations.</h3>
+
+    <h3>This exercise will check how well you know which secondary colors are created by combining primary colors, based
+        on the traditional RYB color set.</h3>
+</div>
+
+<div class="row shadow">
+    <div class="col-xs-12 col-md-5 shadow">
+        <div id="inputColorBox">
+
+            <div class="col-xs-5" id="box1"><h3 class="colornum">1</h3></div>
+            <div class="col-xs-2" id="plus"><p>+</p></div>
+            <div class="col-xs-5" id="box2"><h3 class="colornum">2</h3></div>
+
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-2" id="equals">
+        <p>=</p>
+    </div>
+    <div class="col-xs-12 col-md-5 shadow">
+        <div id="colorValueBox">
+            <h3>Choose the result of mixing color 1 and color 2</h3>
+
+            <div class="col-xs-6" id="colorValue1" onclick="checkColor(0)"><h3 class="colornum">Orange</h3></div>
+            <div class="col-xs-6" id="colorValue2" onclick="checkColor(1)"><h3 class="colornum">Purple</h3></div>
+            <div class="col-xs-6" id="colorValue3" onclick="checkColor(2)"><h3 class="colornum">Green</h3></div>
+            <div class="col-xs-6" id="colorValue4" onclick="checkColor(3)"></div>
+        </div>
+    </div>
+</div>
+<br>
+<div id="colorStarBox">
+    <h4>Below you will see the relationship of Primary, Secondary, and Tertiary colors. Tertiary colors are created by adding three parts of one primary color to one part of another primary color.</h4>
+    <br>
+    <img id="colorStar" src="img/Color_Star.png"/>
+</div>
+<div id="credit">
+    "<a href="https://commons.wikimedia.org/wiki/File:Color_star-en_(tertiary_names).svg#/media/File:Color_star-en_(tertiary_names).svg">Color
+    star-en (tertiary names)</a>" by <a href="//commons.wikimedia.org/wiki/User:Kwamikagami" title="User:Kwamikagami">Kwamikagami</a>
+    - <span class="int-own-work" lang="en">Own work</span>. Licensed under <a
+        href="http://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC
+    BY-SA 4.0</a> via <a href="https://commons.wikimedia.org/wiki/">Commons</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="answerModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content dark">
+            <div class="modal-body">
+                <div id="#responsetxt"></div>
+            </div>
+            <!-- TODO: Didn't see the modal close button, is the footer code required? -->
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+            <!--</div>-->
+        </div>
+
+    </div>
+</div>
+<script src="colorTheoryApp.js"></script>
+</body>
+</html>

@@ -29,6 +29,22 @@ body {
     font-weight: 700;
 }
 
+a:link {
+    color: #3a98dc;
+}
+
+a:visited {
+    color: #5b83af;
+}
+
+a:hover {
+    color: #3ca5eb
+}
+
+a:active {
+    color: #58af3d
+}
+
 /* Custom Button Styles */
 
 .btn-dark {
@@ -237,3 +253,74 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+.title {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 70%;
+    text-align: center;
+    font-size: 70px;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: #ffffff;
+
+}
+
+.prepClass {
+    background-image: url("../img/DeathtoStock_Creative%20Community9.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.storyBox {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.engIndex {
+    background-image: url("../img/DeathtoStock_Creative%20Community6.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.body {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 70%;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: #ffffff;
+
+}
+
+.body-note {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 60%;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: #ffffff;
+
+}
+
+.body-unsort {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 35%;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: #ffffff;
+
+}
+
+.whatHappened {
+    background-image: url("../img/DeathtoStock_Wired6.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+

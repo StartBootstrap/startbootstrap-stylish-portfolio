@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<style>
+		.yay {
+			background: #00fc17;
+		}
+		
+		.false {
+			background-color: #c20300;
+		}
+		
+
+	</style>
+</head>
+<body>
+
+<div>Now is the time for all good men ot come to the aid of the party</div>
+
+<textarea name="studentInput" id="studentInput" cols="30" rows="10"></textarea>
+
+<progress value="0" max="100"></progress>
+
+<script>
+	var source = "Now is the time for all good men ot come to the aid of the party";
+	function TypingModel() {
+		this.sourceDocument = source;
+		this.theirDocument = '';
+		this.setTheirDocument = function (theirDocument) {
+			this.theirDocument = theirDocument;
+		};
+		this.progress = function () {
+			return this.theirDocument.length / this.sourceDocument.length * 100;
+		};
+		this.isAccurate = function (){
+			var accurate = true;
+			for(var i = 0; i < this.theirDocument.length; i++){
+				if (this.theirDocument[i] !== this.sourceDocument[i]) {
+					accurate = false;
+				}
+			}
+			return accurate;
+		};
+	}
+
+	var model = new TypingModel();
+
+	$("#studentInput").keyup(function(){
+		model.setTheirDocument($("#studentInput").val());
+		if (model.progress() === 100){ $('body').addClass('yay')}
+		else {$('body').removeClass("yay")}
+		if (!model.isAccurate()){ $('body').addClass('false')}
+		else {$('body').removeClass("false")}
+		$("progress").val(model.progress());
+	});
+
+
+</script>
+</body>
+</html>

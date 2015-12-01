@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/2.4.1/math.min.js"></script>
+
+    <!-- load http://maurizzzio.github.io/function-plot/ -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="http://brcdn.org/RbDt4b0Shej4JLF7KBQEilNbIiI.js"></script>
+    <title>Graphs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+    .radio1{color: #31b0d5;font-size: xx-large}
+    h1{color: red}
+
+</style>
+</head>
+<body style="background-color: #cdcacf">
+<div class="container-fluid">
+    <div class="row" style="text-align: center"><h1>INTRUCTIONS:</h1>
+
+        <h3>Select whether the first image has More, Less, or is Equal to the number of animals in the second image.</h3><br>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+
+            <h1>Question #1</h1>
+
+            <div class="row">
+                <div class="container col-lg-6">
+                    <img src="../images/4catDog.png" alt="4 dogs" height="250" width="300">
+                </div>
+                <div class="container col-lg-6" >
+                    <img src="../images/2cats.png" alt="2 dogs" height="220" width="320">
+
+                </div>
+            </div>
+            <div class="row col-sm-offset-3 ">
+                <input type="radio" id="equalTo1" style="font-size: xx-large">  <label class="radio1"> (=) Equal To</label><br>
+                <input type="radio" id="lessThan1" style="font-size: xx-large"> <label class="radio1"> (<) Less Than</label><br>
+                <input type="radio" id="greaterThan1" style="font-size: xx-large"> <label class="radio1"> (>) Greater Than</label><br>
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-6">
+
+
+            <h1>Question #2</h1>
+            <div class="row">
+                <div class="container col-lg-6">
+                    <img src="../images/Pricing-Dog-5.png" alt="4 dogs" height="250" width="300">
+                </div>
+                <div class="container col-lg-6" >
+                    <img src="../images/5animals.png" alt="5 dogs" height="240" width="350">
+
+                </div>
+            </div>
+            <div class="row col-sm-offset-3 ">
+                <input type="radio" id="equalTo2" style="font-size: xx-large">  <label class="radio1"> (=) Equal To</label><br>
+                <input type="radio" id="lessThan2" style="font-size: xx-large"> <label class="radio1"> (<) Less Than</label><br>
+                <input type="radio" id="greaterThan2" style="font-size: xx-large"> <label class="radio1"> (>) Greater Than</label><br>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+
+            <h1>Question #3</h1>
+            <div class="row">
+            <div class="container col-lg-6">
+                <img src="../images/dog_PNG195.png" alt="4 dogs" height="250" width="300">
+                </div>
+            <div class="container col-lg-6" >
+                <img src="../images/Pricing-Dog-5.png" alt="5 dogs" height="220" width="320">
+
+            </div>
+            </div>
+            <div class="row col-sm-offset-3 ">
+                <input type="radio" id="equalTo3" style="font-size: xx-large">  <label class="radio1"> (=) Equal To</label><br>
+                <input type="radio" id="lessThan3" style="font-size: xx-large"> <label class="radio1"> (<) Less Than</label><br>
+                <input type="radio" id="greaterThan3" style="font-size: xx-large"> <label class="radio1"> (>) Greater Than</label><br>
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-6">
+
+            <h1>Question #4</h1>
+            <div class="row">
+                <div class="container col-lg-6">
+                    <img src="../images/meerkats.png" alt="4 dogs" height="250" width="300">
+                </div>
+                <div class="container col-lg-6" >
+                    <img src="../images/3lions.png" alt="5 dogs" height="220" width="320">
+
+                </div>
+            </div>
+            <div class="row col-sm-offset-3 ">
+                <input type="radio" id="equalTo4" style="font-size: xx-large">  <label class="radio1"> (=) Equal To</label><br>
+                <input type="radio" id="lessThan4" style="font-size: xx-large"> <label class="radio1"> (<) Less Than</label><br>
+                <input type="radio" id="greaterThan4" style="font-size: xx-large"> <label class="radio1"> (>) Greater Than</label><br>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>
