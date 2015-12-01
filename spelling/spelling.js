@@ -18,8 +18,8 @@ function WordList(source, delimeter) {
 function Word(src, language) {
     this.src = src;
     this.voice = window.speechSynthesis.getVoices()[1];
-    this.language = "en" || language;
-    this.translation = this.language == 'en' ? new Word('','') : null;
+    this.language = language || "en" ;
+    this.translation = (this.language == 'en') ? new Word('word','fr') : null;
     this.say = function() {
         var msg = new SpeechSynthesisUtterance(this.src);
         msg.voice = this.voice;

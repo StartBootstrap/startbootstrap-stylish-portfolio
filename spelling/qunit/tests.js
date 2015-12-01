@@ -19,5 +19,5 @@ QUnit.test( "Test Word", function( assert ) {
 QUnit.test( "Test Translation", function( assert ) {
     var word = new Word("potatoe");
 
-    assert.ok(word.translation.spelledRight("Potatoe"));
+    assert.ok(word.translation.spelledRight("word"));
 });
