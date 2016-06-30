@@ -71,7 +71,7 @@ hr.small {
     right: 0;
     width: 250px;
     height: 100%;
-    margin-right: -250px;
+    transform: translateX(250px);
     overflow-y: auto;
     background: #222;
     -webkit-transition: all 0.4s ease 0s;
