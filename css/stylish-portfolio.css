@@ -232,6 +232,10 @@ hr.small {
     }
 }
 
+.map iframe {
+    pointer-events: none;
+}
+
 /* Footer */
 
 footer {
