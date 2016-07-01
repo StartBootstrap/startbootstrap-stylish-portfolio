@@ -38,22 +38,22 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
+                <a href="#top" onclick=$ ( "#menu-close").click();>Start Bootstrap</a>
             </li>
             <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                <a href="#top" onclick=$ ( "#menu-close").click();>Home</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                <a href="#about" onclick=$ ( "#menu-close").click();>About</a>
             </li>
             <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+                <a href="#services" onclick=$ ( "#menu-close").click();>Services</a>
             </li>
             <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+                <a href="#portfolio" onclick=$ ( "#menu-close").click();>Portfolio</a>
             </li>
             <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                <a href="#contact" onclick=$ ( "#menu-close").click();>Contact</a>
             </li>
         </ul>
     </nav>
@@ -237,10 +237,11 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Start Bootstrap</strong>
                     </h4>
-                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    <p>3481 Melrose Place
+                        <br>Beverly Hills, CA 90210</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
                         </li>
                     </ul>
                     <br>
@@ -276,18 +277,15 @@
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
-
     // Opens the sidebar menu
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
-
     // Scrolls to the selected menu item on the page
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
@@ -299,27 +297,51 @@
             }
         });
     });
-
     //#to-top button appears after scrolling
     var fixed = false;
     $(document).scroll(function() {
-        if( $(this).scrollTop() > 250 ) {
-            if( !fixed ) {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
                 fixed = true;
                 // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show( "slow", function() {
-                    $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
                 });
             }
         } else {
-            if( fixed ) {
+            if (fixed) {
                 fixed = false;
-                $('#to-top').hide( "slow", function() {
-                    $('#to-top').css({display:'none'});
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
                 });
             }
         }
     });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
     </script>
 
 </body>
