@@ -1,0 +1,9 @@
+{
+  "name": "SparkleCity",
+  "version": "1",
+  "description": "Sparkle City Website",
+  "main": "index.js",
+  "repository": "https://github.com/flawavi/Sparkle-City.git",
+  "author": "Fletcher Watson <fbwthe6@gmail.com>",
+  "license": "MIT"
+}
