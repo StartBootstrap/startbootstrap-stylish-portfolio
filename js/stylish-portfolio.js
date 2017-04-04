@@ -4,49 +4,62 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-// Closes the sidebar menu
-$("#menu-close").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-});
-// Opens the sidebar menu
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-});
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(document).on('click', 'a.page-scroll', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: ($($anchor.attr('href')).offset().top)
-    }, 1250, 'easeInOutExpo');
-    event.preventDefault();
-});
-//#to-top button appears after scrolling
-var fixed = false;
-$(document).scroll(function() {
-    if ($(this).scrollTop() > 250) {
-        if (!fixed) {
-            fixed = true;
-            // $('#to-top').css({position:'fixed', display:'block'});
-            $('#to-top').show("slow", function() {
-                $('#to-top').css({
-                    position: 'fixed',
-                    display: 'block'
-                });
-            });
+(function($) {
+    "use strict"; // Start of use strict
+
+    // Closes the sidebar menu
+    $("#menu-close, .sidebar-nav>li>a").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Smooth scrolling using jQuery easing
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000, "easeInOutExpo");
+                return false;
+            }
         }
-    } else {
-        if (fixed) {
-            fixed = false;
-            $('#to-top').hide("slow", function() {
-                $('#to-top').css({
-                    display: 'none'
+    });
+
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
                 });
-            });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
         }
-    }
-});
+    });
+
+})(jQuery); // End of use strict
+
 // Disable Google Maps scrolling
 // See http://stackoverflow.com/a/25904582/1607849
 // Disable scroll zooming and bind back the click event
