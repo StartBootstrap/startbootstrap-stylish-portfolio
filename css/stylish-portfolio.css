@@ -1,8 +1,9 @@
 /*!
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
+ * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
 
 /* Global Styles */
 
@@ -13,7 +14,7 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .text-vertical-center {
@@ -23,39 +24,43 @@ body {
 }
 
 .text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
     font-size: 4.5em;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
+
 
 /* Custom Button Styles */
 
 .btn-dark {
-    border-radius: 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    border: none;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .btn-light {
-    border-radius: 0;
     color: #333;
-    background-color: rgb(255,255,255);
+    border: none;
+    border-radius: 0;
+    background-color: rgb(255, 255, 255);
 }
 
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
     color: #333;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, .8);
 }
+
 
 /* Custom Horizontal Rule */
 
@@ -63,22 +68,23 @@ hr.small {
     max-width: 100px;
 }
 
+
 /* Side Menu */
 
 #sidebar-wrapper {
-    z-index: 1000;
     position: fixed;
+    z-index: 1000;
     right: 0;
+    overflow-y: auto;
     width: 250px;
     height: 100%;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
     transform: translateX(250px);
-    overflow-y: auto;
     background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
 }
 
 .sidebar-nav {
@@ -91,8 +97,8 @@ hr.small {
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
     line-height: 40px;
+    text-indent: 20px;
 }
 
 .sidebar-nav li a {
@@ -104,7 +110,7 @@ hr.small {
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, .2);
 }
 
 .sidebar-nav li a:active,
@@ -113,9 +119,9 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 55px;
     font-size: 18px;
     line-height: 55px;
+    height: 55px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -128,8 +134,8 @@ hr.small {
 }
 
 #menu-toggle {
-    z-index: 1;
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
 }
@@ -137,36 +143,41 @@ hr.small {
 #sidebar-wrapper.active {
     right: 250px;
     width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
 }
 
 .toggle {
+    font-size: 1em;
     margin: 5px 5px 0 0;
+    padding: 15px 20px;
 }
+
 
 /* Header */
 
 .header {
-    display: table;
     position: relative;
+    display: table;
     width: 100%;
     height: 100%;
     background: url(../img/bg.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
 }
+
 
 /* About */
 
 .about {
     padding: 50px 0;
 }
+
 
 /* Services */
 
@@ -178,6 +189,7 @@ hr.small {
     margin-bottom: 30px;
 }
 
+
 /* Callout */
 
 .callout {
@@ -188,9 +200,10 @@ hr.small {
     background: url(../img/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
 }
+
 
 /* Portfolio */
 
@@ -207,8 +220,9 @@ hr.small {
 }
 
 .img-portfolio:hover {
-    opacity: 0.8;
+    opacity: .8;
 }
+
 
 /* Call to Action */
 
@@ -219,6 +233,7 @@ hr.small {
 .call-to-action .btn {
     margin: 10px;
 }
+
 
 /* Map */
 
@@ -236,6 +251,7 @@ hr.small {
     pointer-events: none;
 }
 
+
 /* Footer */
 
 footer {
@@ -243,8 +259,10 @@ footer {
 }
 
 #to-top {
-  display: none;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
+    font-size: 1em;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    display: none;
+    padding: 15px 20px;
 }
