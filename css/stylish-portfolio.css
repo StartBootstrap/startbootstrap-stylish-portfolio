@@ -119,6 +119,7 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand {
+    display: inline-block;
     font-size: 18px;
     line-height: 55px;
     height: 55px;
@@ -137,7 +138,7 @@ hr.small {
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 #sidebar-wrapper.active {
