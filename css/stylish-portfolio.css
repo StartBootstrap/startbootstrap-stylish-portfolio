@@ -74,7 +74,7 @@ hr.small {
 #sidebar-wrapper {
     position: fixed;
     z-index: 1000;
-    right: 0;
+    left: -500px;
     overflow-y: auto;
     width: 250px;
     height: 100%;
@@ -119,6 +119,7 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand {
+    display: inline-block;
     font-size: 18px;
     line-height: 55px;
     height: 55px;
@@ -137,11 +138,11 @@ hr.small {
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 #sidebar-wrapper.active {
-    right: 250px;
+    left: -250px;
     width: 250px;
     -webkit-transition: all .4s ease 0s;
     -moz-transition: all .4s ease 0s;
