@@ -16,195 +16,191 @@
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
   </head>
 
-  <body>
+  <body id="page-top">
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+    <a class="menu-toggle rounded" href="#">
       <i class="fa fa-bars"></i>
     </a>
     <nav id="sidebar-wrapper">
       <ul class="sidebar-nav">
-        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
-          <i class="fa fa-times"></i>
-        </a>
         <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#top">Start Bootstrap</a>
+          <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
         </li>
-        <li>
-          <a class="js-scroll-trigger" href="#top">Home</a>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
         </li>
-        <li>
+        <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#about">About</a>
         </li>
-        <li>
+        <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#services">Services</a>
         </li>
-        <li>
+        <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
         </li>
-        <li>
-          <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
 
     <!-- Header -->
-    <header class="header" id="top">
-      <div class="text-vertical-center">
-        <h1>Start Bootstrap</h1>
-        <h3>Free Bootstrap Themes &amp; Templates</h3>
-        <br>
-        <a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Find Out More</a>
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">Stylish Portfolio</h1>
+        <h3 class="mb-5">
+          <em>A Free Bootstrap Theme by Start Bootstrap</em>
+        </h3>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
       </div>
+      <div class="overlay"></div>
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section class="content-section bg-light" id="about">
       <div class="container text-center">
-        <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-        <p class="lead">This theme features some wonderful photography courtesy of
-          <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+            <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
+              <a href="https://unsplash.com/">Unsplash</a>!</p>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+          </div>
+        </div>
       </div>
-      <!-- /.container -->
     </section>
 
     <!-- Services -->
-    <section id="services" class="services bg-primary text-white">
+    <section class="content-section bg-primary text-white text-center" id="services">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-10 mx-auto">
-            <h2>Our Services</h2>
-            <hr class="small">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Service Name</strong>
-                  </h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Service Name</strong>
-                  </h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Service Name</strong>
-                  </h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Service Name</strong>
-                  </h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-            </div>
-            <!-- /.row (nested) -->
-          </div>
-          <!-- /.col-lg-10 -->
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">Services</h3>
+          <h2 class="mb-5">What We Offer</h2>
         </div>
-        <!-- /.row -->
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-screen-smartphone"></i>
+            </span>
+            <h4>
+              <strong>Responsive</strong>
+            </h4>
+            <p class="text-faded mb-0">Looks great on any screen size!</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Redesigned</strong>
+            </h4>
+            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-like"></i>
+            </span>
+            <h4>
+              <strong>Favorited</strong>
+            </h4>
+            <p class="text-faded mb-0">Millions of users
+              <i class="fa fa-heart"></i>
+              Start Bootstrap!</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-mustache"></i>
+            </span>
+            <h4>
+              <strong>Question</strong>
+            </h4>
+            <p class="text-faded mb-0">I mustache you a question...</p>
+          </div>
+        </div>
       </div>
-      <!-- /.container -->
     </section>
 
     <!-- Callout -->
-    <aside class="callout">
-      <div class="text-vertical-center">
-        <h1>Vertically Centered Text</h1>
+    <section class="callout">
+      <div class="container text-center">
+        <h2 class="mx-auto mb-5">Welcome to
+          <em>your</em>
+          next website!</h2>
+        <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
       </div>
-    </aside>
+    </section>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <section class="content-section" id="portfolio">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center">
-            <h2>Our Work</h2>
-            <hr class="small">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-1.jpg">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-2.jpg">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-3.jpg">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-4.jpg">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- /.row (nested) -->
-            <a href="#" class="btn btn-dark">View More Items</a>
-          </div>
-          <!-- /.col-lg-10 -->
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio</h3>
+          <h2 class="mb-5">Recent Projects</h2>
         </div>
-        <!-- /.row -->
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Stationary</h2>
+                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Ice Cream</h2>
+                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Strawberries</h2>
+                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Workspace</h2>
+                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+            </a>
+          </div>
+        </div>
       </div>
-      <!-- /.container -->
     </section>
 
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary text-white">
+    <section class="content-section bg-primary text-white">
       <div class="container text-center">
-        <h3>The buttons below are impossible to resist.</h3>
-        <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-        <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
       </div>
-    </aside>
+    </section>
 
     <!-- Map -->
     <section id="contact" class="map">
@@ -216,51 +212,33 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer text-center">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center">
-            <h4>
-              <strong>Start Bootstrap</strong>
-            </h4>
-            <p>3481 Melrose Place
-              <br>Beverly Hills, CA 90210</p>
-            <ul class="list-unstyled">
-              <li>
-                <i class="fa fa-phone fa-fw"></i>
-                (123) 456-7890</li>
-              <li>
-                <i class="fa fa-envelope-o fa-fw"></i>
-                <a href="mailto:name@example.com">name@example.com</a>
-              </li>
-            </ul>
-            <br>
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook fa-fw fa-3x"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter fa-fw fa-3x"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-dribbble fa-fw fa-3x"></i>
-                </a>
-              </li>
-            </ul>
-            <hr class="small">
-            <p class="text-muted">Copyright &copy; Your Website 2017</p>
-          </div>
-        </div>
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="#">
+              <i class="icon-social-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; Your Website 2017</p>
       </div>
-      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
-        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
-      </a>
     </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -270,7 +248,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.js"></script>
+    <script src="js/stylish-portfolio.min.js"></script>
 
   </body>
 

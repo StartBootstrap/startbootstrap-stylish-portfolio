@@ -2,15 +2,11 @@
   "use strict"; // Start of use strict
 
   // Closes the sidebar menu
-  $("#menu-close").click(function(e) {
+  $(".menu-toggle").click(function(e) {
     e.preventDefault();
     $("#sidebar-wrapper").toggleClass("active");
-  });
-
-  // Opens the sidebar menu
-  $("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
+    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
+    $(this).toggleClass("active");
   });
 
   // Smooth scrolling using jQuery easing
@@ -28,32 +24,19 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('#sidebar-wrapper .js-scroll-trigger').click(function() {
     $("#sidebar-wrapper").removeClass("active");
+    $(".menu-toggle").removeClass("active");
+    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
   });
 
-  //#to-top button appears after scrolling
-  var fixed = false;
+  // Scroll to top button appear
   $(document).scroll(function() {
-    if ($(this).scrollTop() > 250) {
-      if (!fixed) {
-        fixed = true;
-        $('#to-top').show("slow", function() {
-          $('#to-top').css({
-            position: 'fixed',
-            display: 'block'
-          });
-        });
-      }
+    var scrollDistance = $(this).scrollTop();
+    if (scrollDistance > 100) {
+      $('.scroll-to-top').fadeIn();
     } else {
-      if (fixed) {
-        fixed = false;
-        $('#to-top').hide("slow", function() {
-          $('#to-top').css({
-            display: 'none'
-          });
-        });
-      }
+      $('.scroll-to-top').fadeOut();
     }
   });
 
