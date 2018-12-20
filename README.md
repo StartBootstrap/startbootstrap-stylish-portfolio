@@ -4,7 +4,7 @@ I’ve started learning again to code and to create my own sound for my plan on 
 
 On this page, you’ll see how I managed to create a website using GitHub Learning Lab, my Sound Design Reel and a sample of how I would Design & Develop Web Pages. This will be my official website and thus, would be updated with more content as I learn more on GitHub, Design & Develop Web Pages and do more Reels.
 
-This page was created by and is maintained by **[Vicente G. Reyes](https://github.com/reyesvicente)**, Owner of [The Lifestyle x Apparel](https://thelifestylexapparel.com/new-arrival/), [The G-String](https://thegstring.bigcartel.com) and Highcenburg Music.
+This page was created by and is maintained by **[Vicente G. Reyes](https://github.com/reyesvicente)**.
 
 * https://www.behance.net/icenreyes773d
 * https://twitter.com/icen814
