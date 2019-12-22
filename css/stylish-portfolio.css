@@ -390,7 +390,7 @@ header video {
 
 header .container {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 header .overlay {
@@ -401,7 +401,7 @@ header .overlay {
   width: 100%;
   background-color: black;
   opacity: 0.5;
-  z-index: 1;
+  z-index: 0;
 }
 
 @media (pointer: coarse) and (hover: none) {
