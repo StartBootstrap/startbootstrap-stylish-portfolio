@@ -1,59 +1,43 @@
-.portfolio-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  max-width: 530px;
-  margin: auto auto 1rem;
-  .caption {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-color: fade-out($gray-900, 0.8);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    .caption-content {
-      color: $white;
-      margin: auto 2rem 2rem;
-      h2 {
-        font-size: 0.8rem;
-        text-transform: uppercase;
+// Styling for the portfolio section
+#portfolio {
+  .container-fluid {
+    max-width: 1920px;
+    .portfolio-box {
+      position: relative;
+      display: block;
+      .portfolio-box-caption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        bottom: 0;
+
+        text-align: center;
+        opacity: 0;
+
+        color: $white;
+        background: fade-out($primary, .1);
+        transition: opacity 0.25s ease;
+        text-align: center;
+        .project-category {
+          font-family: $font-family-sans-serif;
+          font-size: 0.85rem;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        .project-name {
+          font-size: 1.2rem;
+        }
       }
-      p {
-        font-weight: 300;
-        font-size: 1.2rem;
-      }
-    }
-  }
-  @media(min-width: 992px) {
-    max-width: none;
-    margin: 0;
-    .caption {
-      -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-      -webkit-clip-path: inset(0px);
-      clip-path: inset(0px);
-      .caption-content {
-        transition: opacity 0.25s;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        margin-bottom: 5rem;
-      }
-    }
-    img {
-      -webkit-transition: -webkit-clip-path 0.25s ease-out;
-      -webkit-clip-path: inset(-1px);
-      clip-path: inset(-1px);
-    }
-    &:hover {
-      img {
-        -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem);
-      }
-      .caption {
-        background-color: fade-out($primary, 0.1);
-        -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem);
+      &:hover {
+        .portfolio-box-caption {
+          opacity: 1;
+        }
       }
     }
   }

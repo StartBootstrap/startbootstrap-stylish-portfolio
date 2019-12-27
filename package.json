@@ -1,11 +1,11 @@
 {
-    "title": "Stylish Portfolio",
-    "name": "startbootstrap-stylish-portfolio",
-    "version": "5.0.7",
+    "title": "Creative",
+    "name": "startbootstrap-creative",
+    "version": "5.1.8",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "A stylish portfolio HTML template built with Bootstrap",
+    "description": "Creative is a stylish one page HTML theme for Bootstrap.",
     "keywords": [
         "css",
         "sass",
@@ -14,9 +14,9 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/stylish-portfolio",
+    "homepage": "https://startbootstrap.com/template-overviews/creative",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/issues",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-creative/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -26,14 +26,14 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio.git"
+        "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
         "bootstrap": "4.3.1",
         "jquery": "3.4.1",
         "jquery.easing": "^1.4.1",
-        "simple-line-icons": "^2.4.1"
+        "magnific-popup": "^1.1.0"
     },
     "devDependencies": {
         "browser-sync": "2.26.7",
