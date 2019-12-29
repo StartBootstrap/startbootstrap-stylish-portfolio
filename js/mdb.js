@@ -35,7 +35,7 @@
   scrolling-navbar.js
   waves.js
   forms-free.js
-  enhanced-modals.js
+  enhanced-models.js
   treeview.js
 
 */
@@ -17153,29 +17153,29 @@ $(document).ready(function () {
   });
 })(jQuery);
 /*
-    Enhanced Bootstrap Modals
+    Enhanced Bootstrap models
     https://mdbootstrap.com
     office@mdbootstrap.com
 */
 
 (function($){
-  $('body').on('shown.bs.modal', '.modal', function() {
-    if(!$('.modal-backdrop').length) {
+  $('body').on('shown.bs.model', '.model', function() {
+    if(!$('.model-backdrop').length) {
 
-      $modal_dialog = $(this).children('.modal-dialog')
+      $model_dialog = $(this).children('.model-dialog')
 
-      if($modal_dialog.hasClass('modal-side')) {
-        $(this).addClass('modal-scrolling');
+      if($model_dialog.hasClass('model-side')) {
+        $(this).addClass('model-scrolling');
         $('body').addClass('scrollable');
       }
 
-      if($modal_dialog.hasClass('modal-frame')) {
-        $(this).addClass('modal-content-clickable');
+      if($model_dialog.hasClass('model-frame')) {
+        $(this).addClass('model-content-clickable');
         $('body').addClass('scrollable');
       }
     }
   });
-  $('body').on('hidden.bs.modal', '.modal', function() {
+  $('body').on('hidden.bs.model', '.model', function() {
     $('body').removeClass('scrollable');
   });
 })(jQuery);

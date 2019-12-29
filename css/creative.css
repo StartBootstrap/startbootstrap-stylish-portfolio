@@ -5448,16 +5448,16 @@ a.close.disabled {
   padding: 0.75rem;
 }
 
-.modal-open {
+.model-open {
   overflow: hidden;
 }
 
-.modal-open .modal {
+.model-open .model {
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-.modal {
+.model {
   position: fixed;
   top: 0;
   left: 0;
@@ -5469,74 +5469,74 @@ a.close.disabled {
   outline: 0;
 }
 
-.modal-dialog {
+.model-dialog {
   position: relative;
   width: auto;
   margin: 0.5rem;
   pointer-events: none;
 }
 
-.modal.fade .modal-dialog {
+.model.fade .model-dialog {
   transition: transform 0.3s ease-out;
   transform: translate(0, -50px);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .modal.fade .modal-dialog {
+  .model.fade .model-dialog {
     transition: none;
   }
 }
 
-.modal.show .modal-dialog {
+.model.show .model-dialog {
   transform: none;
 }
 
-.modal-dialog-scrollable {
+.model-dialog-scrollable {
   display: flex;
   max-height: calc(100% - 1rem);
 }
 
-.modal-dialog-scrollable .modal-content {
+.model-dialog-scrollable .model-content {
   max-height: calc(100vh - 1rem);
   overflow: hidden;
 }
 
-.modal-dialog-scrollable .modal-header,
-.modal-dialog-scrollable .modal-footer {
+.model-dialog-scrollable .model-header,
+.model-dialog-scrollable .model-footer {
   flex-shrink: 0;
 }
 
-.modal-dialog-scrollable .modal-body {
+.model-dialog-scrollable .model-body {
   overflow-y: auto;
 }
 
-.modal-dialog-centered {
+.model-dialog-centered {
   display: flex;
   align-items: center;
   min-height: calc(100% - 1rem);
 }
 
-.modal-dialog-centered::before {
+.model-dialog-centered::before {
   display: block;
   height: calc(100vh - 1rem);
   content: "";
 }
 
-.modal-dialog-centered.modal-dialog-scrollable {
+.model-dialog-centered.model-dialog-scrollable {
   flex-direction: column;
   justify-content: center;
   height: 100%;
 }
 
-.modal-dialog-centered.modal-dialog-scrollable .modal-content {
+.model-dialog-centered.model-dialog-scrollable .model-content {
   max-height: none;
 }
 
-.modal-dialog-centered.modal-dialog-scrollable::before {
+.model-dialog-centered.model-dialog-scrollable::before {
   content: none;
 }
 
-.modal-content {
+.model-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -5549,7 +5549,7 @@ a.close.disabled {
   outline: 0;
 }
 
-.modal-backdrop {
+.model-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -5559,15 +5559,15 @@ a.close.disabled {
   background-color: #000;
 }
 
-.modal-backdrop.fade {
+.model-backdrop.fade {
   opacity: 0;
 }
 
-.modal-backdrop.show {
+.model-backdrop.show {
   opacity: 0.5;
 }
 
-.modal-header {
+.model-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -5577,23 +5577,23 @@ a.close.disabled {
   border-top-right-radius: 0.3rem;
 }
 
-.modal-header .close {
+.model-header .close {
   padding: 1rem 1rem;
   margin: -1rem -1rem -1rem auto;
 }
 
-.modal-title {
+.model-title {
   margin-bottom: 0;
   line-height: 1.5;
 }
 
-.modal-body {
+.model-body {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
 }
 
-.modal-footer {
+.model-footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -5603,15 +5603,15 @@ a.close.disabled {
   border-bottom-left-radius: 0.3rem;
 }
 
-.modal-footer > :not(:first-child) {
+.model-footer > :not(:first-child) {
   margin-left: .25rem;
 }
 
-.modal-footer > :not(:last-child) {
+.model-footer > :not(:last-child) {
   margin-right: .25rem;
 }
 
-.modal-scrollbar-measure {
+.model-scrollbar-measure {
   position: absolute;
   top: -9999px;
   width: 50px;
@@ -5620,36 +5620,36 @@ a.close.disabled {
 }
 
 @media (min-width: 576px) {
-  .modal-dialog {
+  .model-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
   }
-  .modal-dialog-scrollable {
+  .model-dialog-scrollable {
     max-height: calc(100% - 3.5rem);
   }
-  .modal-dialog-scrollable .modal-content {
+  .model-dialog-scrollable .model-content {
     max-height: calc(100vh - 3.5rem);
   }
-  .modal-dialog-centered {
+  .model-dialog-centered {
     min-height: calc(100% - 3.5rem);
   }
-  .modal-dialog-centered::before {
+  .model-dialog-centered::before {
     height: calc(100vh - 3.5rem);
   }
-  .modal-sm {
+  .model-sm {
     max-width: 300px;
   }
 }
 
 @media (min-width: 992px) {
-  .modal-lg,
-  .modal-xl {
+  .model-lg,
+  .model-xl {
     max-width: 800px;
   }
 }
 
 @media (min-width: 1200px) {
-  .modal-xl {
+  .model-xl {
     max-width: 1140px;
   }
 }
@@ -6235,13 +6235,13 @@ button.bg-success:focus {
 }
 
 .bg-info {
-  background-color: #17a2b8 !important;
+  background-color: #f7f7f7 !important;
 }
 
 a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
 button.bg-info:focus {
-  background-color: #117a8b !important;
+  background-color: #f7f7f7 !important;
 }
 
 .bg-warning {
@@ -9412,19 +9412,19 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .text-light {
-  color: #f8f9fa !important;
+  color: #c56734 !important;
 }
 
 a.text-light:hover, a.text-light:focus {
-  color: #cbd3da !important;
+  color: #c56734 !important;
 }
 
 .text-dark {
-  color: #343a40 !important;
+  color: #466183 !important;
 }
 
 a.text-dark:hover, a.text-dark:focus {
-  color: #121416 !important;
+  color: #466183 !important;
 }
 
 .text-body {
@@ -9690,43 +9690,153 @@ header.masthead h1 {
   }
 }
 
-#portfolio .container-fluid {
-  max-width: 1920px;
+
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px;
 }
 
-#portfolio .container-fluid .portfolio-box {
+#portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
+  transition: all ease 0.5s;
   opacity: 0;
-  color: #fff;
-  background: rgba(244, 98, 58, 0.9);
-  transition: opacity 0.25s ease;
+  background: rgba(254, 209, 54, 0.9);
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  color: white;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+.portfolio-model .model-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+}
+
+.portfolio-model .model-content {
+  padding: 100px 0;
   text-align: center;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
+.portfolio-model .model-content h2 {
+  font-size: 3em;
+  margin-bottom: 15px;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
+.portfolio-model .model-content p {
+  margin-bottom: 30px;
 }
 
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
+.portfolio-model .model-content p.item-intro {
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px 0 30px;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.portfolio-model .model-content ul.list-inline {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.portfolio-model .model-content img {
+  margin-bottom: 30px;
+}
+
+.portfolio-model .model-content button {
+  cursor: pointer;
+}
+
+.portfolio-model .close-model {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.portfolio-model .close-model:hover {
+  opacity: 0.3;
+}
+
+.portfolio-model .close-model .lr {
+  /* Safari and Chrome */
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  /* IE 9 */
+  transform: rotate(45deg);
+  background-color: #212529;
+}
+
+.portfolio-model .close-model .lr .rl {
+  /* Safari and Chrome */
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  /* IE 9 */
+  transform: rotate(90deg);
+  background-color: #212529;
 }

@@ -207,7 +207,7 @@ MagnificPopup.prototype = {
 		mfp.st = $.extend(true, {}, $.magnificPopup.defaults, data ); 
 		mfp.fixedContentPos = mfp.st.fixedContentPos === 'auto' ? !mfp.probablyMobile : mfp.st.fixedContentPos;
 
-		if(mfp.st.modal) {
+		if(mfp.st.model) {
 			mfp.st.closeOnContentClick = false;
 			mfp.st.closeOnBgClick = false;
 			mfp.st.showCloseBtn = false;
@@ -879,7 +879,7 @@ $.magnificPopup = {
 
 		enableEscapeKey: true,
 
-		modal: false,
+		model: false,
 
 		alignTop: false,
 

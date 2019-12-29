@@ -5716,16 +5716,16 @@ a.close.disabled {
   padding: 0.75rem;
 }
 
-.modal-open {
+.model-open {
   overflow: hidden;
 }
 
-.modal-open .modal {
+.model-open .model {
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-.modal {
+.model {
   position: fixed;
   top: 0;
   left: 0;
@@ -5737,14 +5737,14 @@ a.close.disabled {
   outline: 0;
 }
 
-.modal-dialog {
+.model-dialog {
   position: relative;
   width: auto;
   margin: 0.5rem;
   pointer-events: none;
 }
 
-.modal.fade .modal-dialog {
+.model.fade .model-dialog {
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -5753,38 +5753,38 @@ a.close.disabled {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .modal.fade .modal-dialog {
+  .model.fade .model-dialog {
     transition: none;
   }
 }
 
-.modal.show .modal-dialog {
+.model.show .model-dialog {
   -webkit-transform: none;
   transform: none;
 }
 
-.modal-dialog-scrollable {
+.model-dialog-scrollable {
   display: -ms-flexbox;
   display: flex;
   max-height: calc(100% - 1rem);
 }
 
-.modal-dialog-scrollable .modal-content {
+.model-dialog-scrollable .model-content {
   max-height: calc(100vh - 1rem);
   overflow: hidden;
 }
 
-.modal-dialog-scrollable .modal-header,
-.modal-dialog-scrollable .modal-footer {
+.model-dialog-scrollable .model-header,
+.model-dialog-scrollable .model-footer {
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.modal-dialog-scrollable .modal-body {
+.model-dialog-scrollable .model-body {
   overflow-y: auto;
 }
 
-.modal-dialog-centered {
+.model-dialog-centered {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -5792,13 +5792,13 @@ a.close.disabled {
   min-height: calc(100% - 1rem);
 }
 
-.modal-dialog-centered::before {
+.model-dialog-centered::before {
   display: block;
   height: calc(100vh - 1rem);
   content: "";
 }
 
-.modal-dialog-centered.modal-dialog-scrollable {
+.model-dialog-centered.model-dialog-scrollable {
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-pack: center;
@@ -5806,15 +5806,15 @@ a.close.disabled {
   height: 100%;
 }
 
-.modal-dialog-centered.modal-dialog-scrollable .modal-content {
+.model-dialog-centered.model-dialog-scrollable .model-content {
   max-height: none;
 }
 
-.modal-dialog-centered.modal-dialog-scrollable::before {
+.model-dialog-centered.model-dialog-scrollable::before {
   content: none;
 }
 
-.modal-content {
+.model-content {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -5829,7 +5829,7 @@ a.close.disabled {
   outline: 0;
 }
 
-.modal-backdrop {
+.model-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -5839,15 +5839,15 @@ a.close.disabled {
   background-color: #000;
 }
 
-.modal-backdrop.fade {
+.model-backdrop.fade {
   opacity: 0;
 }
 
-.modal-backdrop.show {
+.model-backdrop.show {
   opacity: 0.5;
 }
 
-.modal-header {
+.model-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
@@ -5860,24 +5860,24 @@ a.close.disabled {
   border-top-right-radius: 0.3rem;
 }
 
-.modal-header .close {
+.model-header .close {
   padding: 1rem 1rem;
   margin: -1rem -1rem -1rem auto;
 }
 
-.modal-title {
+.model-title {
   margin-bottom: 0;
   line-height: 1.5;
 }
 
-.modal-body {
+.model-body {
   position: relative;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1rem;
 }
 
-.modal-footer {
+.model-footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -5890,15 +5890,15 @@ a.close.disabled {
   border-bottom-left-radius: 0.3rem;
 }
 
-.modal-footer > :not(:first-child) {
+.model-footer > :not(:first-child) {
   margin-left: .25rem;
 }
 
-.modal-footer > :not(:last-child) {
+.model-footer > :not(:last-child) {
   margin-right: .25rem;
 }
 
-.modal-scrollbar-measure {
+.model-scrollbar-measure {
   position: absolute;
   top: -9999px;
   width: 50px;
@@ -5907,36 +5907,36 @@ a.close.disabled {
 }
 
 @media (min-width: 576px) {
-  .modal-dialog {
+  .model-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
   }
-  .modal-dialog-scrollable {
+  .model-dialog-scrollable {
     max-height: calc(100% - 3.5rem);
   }
-  .modal-dialog-scrollable .modal-content {
+  .model-dialog-scrollable .model-content {
     max-height: calc(100vh - 3.5rem);
   }
-  .modal-dialog-centered {
+  .model-dialog-centered {
     min-height: calc(100% - 3.5rem);
   }
-  .modal-dialog-centered::before {
+  .model-dialog-centered::before {
     height: calc(100vh - 3.5rem);
   }
-  .modal-sm {
+  .model-sm {
     max-width: 300px;
   }
 }
 
 @media (min-width: 992px) {
-  .modal-lg,
-  .modal-xl {
+  .model-lg,
+  .model-xl {
     max-width: 800px;
   }
 }
 
 @media (min-width: 1200px) {
-  .modal-xl {
+  .model-xl {
     max-width: 1140px;
   }
 }

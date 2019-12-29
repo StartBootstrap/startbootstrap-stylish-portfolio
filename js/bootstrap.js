@@ -2115,9 +2115,9 @@
    * ------------------------------------------------------------------------
    */
 
-  var NAME$5 = 'modal';
+  var NAME$5 = 'model';
   var VERSION$5 = '4.4.1';
-  var DATA_KEY$5 = 'bs.modal';
+  var DATA_KEY$5 = 'bs.model';
   var EVENT_KEY$5 = "." + DATA_KEY$5;
   var DATA_API_KEY$5 = '.data-api';
   var JQUERY_NO_CONFLICT$5 = $.fn[NAME$5];
@@ -2150,19 +2150,19 @@
     CLICK_DATA_API: "click" + EVENT_KEY$5 + DATA_API_KEY$5
   };
   var ClassName$5 = {
-    SCROLLABLE: 'modal-dialog-scrollable',
-    SCROLLBAR_MEASURER: 'modal-scrollbar-measure',
-    BACKDROP: 'modal-backdrop',
-    OPEN: 'modal-open',
+    SCROLLABLE: 'model-dialog-scrollable',
+    SCROLLBAR_MEASURER: 'model-scrollbar-measure',
+    BACKDROP: 'model-backdrop',
+    OPEN: 'model-open',
     FADE: 'fade',
     SHOW: 'show',
-    STATIC: 'modal-static'
+    STATIC: 'model-static'
   };
   var Selector$5 = {
-    DIALOG: '.modal-dialog',
-    MODAL_BODY: '.modal-body',
-    DATA_TOGGLE: '[data-toggle="modal"]',
-    DATA_DISMISS: '[data-dismiss="modal"]',
+    DIALOG: '.model-dialog',
+    model_BODY: '.model-body',
+    DATA_TOGGLE: '[data-toggle="model"]',
+    DATA_DISMISS: '[data-dismiss="model"]',
     FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
     STICKY_CONTENT: '.sticky-top'
   };
@@ -2172,10 +2172,10 @@
    * ------------------------------------------------------------------------
    */
 
-  var Modal =
+  var model =
   /*#__PURE__*/
   function () {
-    function Modal(element, config) {
+    function model(element, config) {
       this._config = this._getConfig(config);
       this._element = element;
       this._dialog = element.querySelector(Selector$5.DIALOG);
@@ -2188,7 +2188,7 @@
     } // Getters
 
 
-    var _proto = Modal.prototype;
+    var _proto = model.prototype;
 
     // Public
     _proto.toggle = function toggle(relatedTarget) {
@@ -2280,10 +2280,10 @@
       if (transition) {
         var transitionDuration = Util.getTransitionDurationFromElement(this._element);
         $(this._element).one(Util.TRANSITION_END, function (event) {
-          return _this2._hideModal(event);
+          return _this2._hidemodel(event);
         }).emulateTransitionEnd(transitionDuration);
       } else {
-        this._hideModal();
+        this._hidemodel();
       }
     };
 
@@ -2334,10 +2334,10 @@
 
         this._element.classList.add(ClassName$5.STATIC);
 
-        var modalTransitionDuration = Util.getTransitionDurationFromElement(this._element);
+        var modelTransitionDuration = Util.getTransitionDurationFromElement(this._element);
         $(this._element).one(Util.TRANSITION_END, function () {
           _this3._element.classList.remove(ClassName$5.STATIC);
-        }).emulateTransitionEnd(modalTransitionDuration);
+        }).emulateTransitionEnd(modelTransitionDuration);
 
         this._element.focus();
       } else {
@@ -2349,10 +2349,10 @@
       var _this4 = this;
 
       var transition = $(this._element).hasClass(ClassName$5.FADE);
-      var modalBody = this._dialog ? this._dialog.querySelector(Selector$5.MODAL_BODY) : null;
+      var modelBody = this._dialog ? this._dialog.querySelector(Selector$5.model_BODY) : null;
 
       if (!this._element.parentNode || this._element.parentNode.nodeType !== Node.ELEMENT_NODE) {
-        // Don't move modal's DOM position
+        // Don't move model's DOM position
         document.body.appendChild(this._element);
       }
 
@@ -2360,10 +2360,10 @@
 
       this._element.removeAttribute('aria-hidden');
 
-      this._element.setAttribute('aria-modal', true);
+      this._element.setAttribute('aria-model', true);
 
-      if ($(this._dialog).hasClass(ClassName$5.SCROLLABLE) && modalBody) {
-        modalBody.scrollTop = 0;
+      if ($(this._dialog).hasClass(ClassName$5.SCROLLABLE) && modelBody) {
+        modelBody.scrollTop = 0;
       } else {
         this._element.scrollTop = 0;
       }
@@ -2436,14 +2436,14 @@
       }
     };
 
-    _proto._hideModal = function _hideModal() {
+    _proto._hidemodel = function _hidemodel() {
       var _this8 = this;
 
       this._element.style.display = 'none';
 
       this._element.setAttribute('aria-hidden', true);
 
-      this._element.removeAttribute('aria-modal');
+      this._element.removeAttribute('aria-model');
 
       this._isTransitioning = false;
 
@@ -2531,19 +2531,19 @@
         callback();
       }
     } // ----------------------------------------------------------------------
-    // the following methods are used to handle overflowing modals
-    // todo (fat): these should probably be refactored out of modal.js
+    // the following methods are used to handle overflowing models
+    // todo (fat): these should probably be refactored out of model.js
     // ----------------------------------------------------------------------
     ;
 
     _proto._adjustDialog = function _adjustDialog() {
-      var isModalOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
+      var ismodelOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
 
-      if (!this._isBodyOverflowing && isModalOverflowing) {
+      if (!this._isBodyOverflowing && ismodelOverflowing) {
         this._element.style.paddingLeft = this._scrollbarWidth + "px";
       }
 
-      if (this._isBodyOverflowing && !isModalOverflowing) {
+      if (this._isBodyOverflowing && !ismodelOverflowing) {
         this._element.style.paddingRight = this._scrollbarWidth + "px";
       }
     };
@@ -2622,14 +2622,14 @@
     } // Static
     ;
 
-    Modal._jQueryInterface = function _jQueryInterface(config, relatedTarget) {
+    model._jQueryInterface = function _jQueryInterface(config, relatedTarget) {
       return this.each(function () {
         var data = $(this).data(DATA_KEY$5);
 
         var _config = _objectSpread2({}, Default$3, {}, $(this).data(), {}, typeof config === 'object' && config ? config : {});
 
         if (!data) {
-          data = new Modal(this, _config);
+          data = new model(this, _config);
           $(this).data(DATA_KEY$5, data);
         }
 
@@ -2645,7 +2645,7 @@
       });
     };
 
-    _createClass(Modal, null, [{
+    _createClass(model, null, [{
       key: "VERSION",
       get: function get() {
         return VERSION$5;
@@ -2657,7 +2657,7 @@
       }
     }]);
 
-    return Modal;
+    return model;
   }();
   /**
    * ------------------------------------------------------------------------
@@ -2684,7 +2684,7 @@
 
     var $target = $(target).one(Event$5.SHOW, function (showEvent) {
       if (showEvent.isDefaultPrevented()) {
-        // Only register focus restorer if modal will actually get shown
+        // Only register focus restorer if model will actually get shown
         return;
       }
 
@@ -2695,7 +2695,7 @@
       });
     });
 
-    Modal._jQueryInterface.call($(target), config, this);
+    model._jQueryInterface.call($(target), config, this);
   });
   /**
    * ------------------------------------------------------------------------
@@ -2703,12 +2703,12 @@
    * ------------------------------------------------------------------------
    */
 
-  $.fn[NAME$5] = Modal._jQueryInterface;
-  $.fn[NAME$5].Constructor = Modal;
+  $.fn[NAME$5] = model._jQueryInterface;
+  $.fn[NAME$5].Constructor = model;
 
   $.fn[NAME$5].noConflict = function () {
     $.fn[NAME$5] = JQUERY_NO_CONFLICT$5;
-    return Modal._jQueryInterface;
+    return model._jQueryInterface;
   };
 
   /**
@@ -3000,7 +3000,7 @@
       clearTimeout(this._timeout);
       $.removeData(this.element, this.constructor.DATA_KEY);
       $(this.element).off(this.constructor.EVENT_KEY);
-      $(this.element).closest('.modal').off('hide.bs.modal', this._hideModalHandler);
+      $(this.element).closest('.model').off('hide.bs.model', this._hidemodelHandler);
 
       if (this.tip) {
         $(this.tip).remove();
@@ -3294,13 +3294,13 @@
         }
       });
 
-      this._hideModalHandler = function () {
+      this._hidemodelHandler = function () {
         if (_this5.element) {
           _this5.hide();
         }
       };
 
-      $(this.element).closest('.modal').on('hide.bs.modal', this._hideModalHandler);
+      $(this.element).closest('.model').on('hide.bs.model', this._hidemodelHandler);
 
       if (this.config.selector) {
         this.config = _objectSpread2({}, this.config, {
@@ -4507,7 +4507,7 @@
   exports.Carousel = Carousel;
   exports.Collapse = Collapse;
   exports.Dropdown = Dropdown;
-  exports.Modal = Modal;
+  exports.model = model;
   exports.Popover = Popover;
   exports.Scrollspy = ScrollSpy;
   exports.Tab = Tab;
