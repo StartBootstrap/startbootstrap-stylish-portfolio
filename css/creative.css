@@ -11,6 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  --myyellow: #FFCD00;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -62,7 +63,7 @@ body {
   margin: 0;
   font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 250;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -398,7 +399,7 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 300;
 }
 
@@ -431,6 +432,11 @@ hr {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: yellow;
 }
 
 small,
@@ -6265,7 +6271,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #c56734 !important;
+  background-color: #f4623a !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -6333,11 +6339,11 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #c56734 !important;
+  border-color: #FFCD00 !important;
 }
 
 .border-secondary {
-  border-color: #6c757d !important;
+  border-color: #f4623a !important;
 }
 
 .border-success {
@@ -9388,7 +9394,7 @@ a.text-success:hover, a.text-success:focus {
 }
 
 .text-info {
-  color: #17a2b8 !important;
+  color: #f4623a !important;
 }
 
 a.text-info:hover, a.text-info:focus {
@@ -9840,3 +9846,13 @@ header.masthead h1 {
   transform: rotate(90deg);
   background-color: #212529;
 }
+
+.v-divider{
+  margin-left:5px;
+  margin-right:5px;
+  width:1px;
+  height:90%;
+  border-left:5px solid gray;
+  align-self:center;
+
+ }
