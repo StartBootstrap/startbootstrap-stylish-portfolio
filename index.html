@@ -111,7 +111,7 @@
             <p class="text-muted mb-4">
               A PDF of my current resume can be found at the following link.
             </p>
-            <a href="Resume/Ben Huckell Resume - Tesla 2020.pdf" download>Ben Huckell - Resume 2020</a>
+            <a href="Resume/Ben Huckell Resume 2020.pdf" download>Ben Huckell - Resume 2020</a>
             
           </div>
         </div>
@@ -212,12 +212,12 @@
           </a>
         </li>
         <li class="list-inline-item ml-4 mr-4">
-          <a href="www.linkedin.com/ben-huckell">
+          <a href="https://www.linkedin.com/ben-huckell">
             <i class="fab fa-linkedin-in fa-3x"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a href="www.github.com/benhuckell">
+          <a href="https://www.github.com/benhuckell">
             <i class="fab fa-github fa-3x"></i>
           </a>
         </li>
@@ -316,10 +316,61 @@
             </div>
           </div>
 
+
+          <!-- TODO: Add section for PCB-->
+
+
           <div class="row mt-5 mb-5"></div>
-          <div class="row mt-5 mt-5">
-            <div class=col-lg-12>
-              <h3 class="test-uppercase text-center mb-5">Rocket Avionics</h3>
+          <div class="row mt-5 mt-5 justify-content-center">
+            <div class="col-lg-8">
+              <h3 class="text-center">Rocket Avionics</h3>
+              <!-- ToDo: Emphasize my role-->
+              <hr class="divider mb-5">
+
+              <h4 class="text-left">The Context</h4>
+              <p class=" text-left mb-3 mt-2">
+                When our rocket eventually launches (hopefully in December, 2020), the onboard avionics system must be in constant communcation
+                with all on-board sensors to relay flight status and execute mission-critical operations. This capability is vital to successfully
+                reach an altitude of 100 km and return the rocket safely back to earth through the deployment of the recovery system. 
+              </p>
+              <h4 class="text-left mt-5 mb-3">The Project</h4>
+              <dl class="row">
+                <dt class="col-sm-3">Key Skills</dt>
+                <dd class="col-sm-9">Robust State Machine Design, Redundant Flight Computer Implementation, I2C Communication Protocol, Kalman Filtering </dd>
+                <dt class="col-sm-3 text-truncate">Key Technologies</dt>
+                <dd class="col-sm-9">Python, C++, Git, Teensy 4.0 Microcontroller</dd>
+              </dl>
+              <p class="text-left mt-3"> 
+                The rocket avionics system must be able to perform all necessary safety checks in the process of fueling, igintion, and eventually flight.
+                Through its flight, the system must constantly monitor its GPS location, acceleration, and altitude. Our GPS and accelerometer units will
+                eventually act as the primary data collection hardware. Location and acceleration values are taken straight from the readings we recieve 
+                from these devices. 
+              </p>
+              <p class="text-left mt-3"> 
+                for low-flying rockets that stay well within the bounds of earths atmosphere, a differential pressure sensor can be directly used to calculate
+                our altitude via the application of the barometric formula. However, with a rocket that is being sent to space, the atmosphere is so thin at higher
+                altitudes, that this method of calculating altitude is far too unreliable.
+              </p>
+              <h6 class="text-left mb-2">Altitude Detection</h6>
+              <p class="text-left mt-3"> 
+                Correctly measuring the altitude of our rocket in flight is vital to the deployment of our recovery system after we have reached our target apogee.
+                Since we cannot directly measure pressure, we must use the kinematics of the flight path, augmented with a Kalman filter to accurately predict
+                and measure where we are in our flight path. We are still in the process of verifying our algorithms functionality, and testing its implementation 
+                throughly. Below are the results we have obtained thus far, using data gathered from our last 30,000 ft rocket "Sky Pilot" which launched this past
+                year at the IREC Competition in New Mexico.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <img class="img-fluid" src="img/positiongraph.png" alt="">
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img class="img-fluid" src="img/velocity graph.png" alt="">
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img class="img-fluid" src="img/accelerationgraph.png" alt="">
             </div>
           </div>
 
