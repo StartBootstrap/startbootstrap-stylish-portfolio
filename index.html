@@ -97,7 +97,7 @@
               dedicated, cohesive team can have. As I continue to expand my skillset and 
               familiarity with some of the new advancements at the forefront of the tech 
               industry, I am excited to find meaningful projects with people who share my
-               interest and enthusiasm in making an impact, and affecting real, positive 
+               interest and enthusiasm in making an impact, and affecting positive 
                change in our communities.
             </p>
             <p class="text-muted mb-4">
@@ -212,7 +212,7 @@
           </a>
         </li>
         <li class="list-inline-item ml-4 mr-4">
-          <a href="https://www.linkedin.com/ben-huckell">
+          <a href="https://www.linkedin.com/in/ben-huckell/">
             <i class="fab fa-linkedin-in fa-3x"></i>
           </a>
         </li>
@@ -299,10 +299,10 @@
 
           <div class="row mt-5">
             <div class="col-lg-6 align-self-center">
-              <p>The video to the right captures a second 1 second hot fire test of our second generation engine.
+              <p class="text-left">The following video captures a second 1 second hot fire test of our second generation engine.
                 On the left side of the video, the remotely-operated test stand can be seen before ignition. 
               </p>
-              <p>
+              <p class="text-left">
                 Since, we are dealing with high pressure gases, and a combustion reaction that produces large amounts of
                 heat and significant thrust forces, safety must be a primary consideration.
                 All implemented ladder logic includes safeguards to ensure that the operation is running within
@@ -346,12 +346,21 @@
                 eventually act as the primary data collection hardware. Location and acceleration values are taken straight from the readings we recieve 
                 from these devices. 
               </p>
+              <h6 class="text-left mb-2">State Machine Design</h6>
               <p class="text-left mt-3"> 
-                for low-flying rockets that stay well within the bounds of earths atmosphere, a differential pressure sensor can be directly used to calculate
+                I was responsible for building a robust, object-oriented state machine capable of keeping track of our rocket's status before and after launch.
+                I implemented this solution in C++, where each state represents a critical phase of the launch and recovery sequence. Our prelimiary state diagram,
+                including state transition criteria and state actions are shown in the table below.
+              </p>
+              <img class="img-fluid" src="img/Avionics State Machine (1).jpg" alt="">
+
+              <h6 class="text-left mb-3 mt-4">Altitude Detection</h6>
+              <p class="text-left mt-3"> 
+                For low-flying rockets that stay well within the bounds of earths atmosphere, a differential pressure sensor can be directly used to calculate
                 our altitude via the application of the barometric formula. However, with a rocket that is being sent to space, the atmosphere is so thin at higher
                 altitudes, that this method of calculating altitude is far too unreliable.
               </p>
-              <h6 class="text-left mb-2">Altitude Detection</h6>
+
               <p class="text-left mt-3"> 
                 Correctly measuring the altitude of our rocket in flight is vital to the deployment of our recovery system after we have reached our target apogee.
                 Since we cannot directly measure pressure, we must use the kinematics of the flight path, augmented with a Kalman filter to accurately predict
@@ -378,9 +387,7 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <ul class="list-inline">
-                <li>Date: January 2017</li>
-                <li>Client: Threads</li>
-                <li>Category: Illustration</li>
+                <li>Last Updated: January, 2020</li>
               </ul>
               <button class="btn btn-primary" data-dismiss="model" type="button">
                 <i class="fas fa-times"></i>
@@ -407,20 +414,125 @@
             <div class="col-lg-8 mx-auto">
               <div class="model-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="model" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+                <h2 class="text-uppercase">Autonomous Robot Competition</h2>
+                <p class="item-intro text-muted">Designing, building, programming an autonomous robot to navigate a
+                  course in the annual Engineering Physics Robot Competition</p>
+
+
+                  <h4 class="text-left">The Context</h4>
+                  <p class=" text-left mb-3 mt-2">
+                    The annual UBC Engineering Physics Robot Competition is an event directly tied to ENPH 253 - our summer engineering design course. Each 
+                    year a different theme or backstory characterizes the ultimate goal of the autonomous robots that are competiting.
+                  </p>
+                  <p class=" text-left mb-3 mt-2">
+                    The 2019 Robot Competition featured an Avengers theme - robots had to navigate the course head to head against another robot, while trying
+                    to collect both infinity stones and avengers and returned them safely to their side of the playing surface. The following UBC article further
+                    explains some of the backstory and competition context.                  
+                  </p>
+                  <a href="https://engineering.ubc.ca/news/2019/08/saving-avengers-at-19th-annual-engineering-physics-robot-competition">UBC Engineering - Saving avengers at the 19th annual engineering physics robot competition</a>
+                  <h4 class="text-left mt-5 mb-3">The Project</h4>
+                  <dl class="row">
+                    <dt class="col-sm-3">Key Skills</dt>
+                    <dd class="col-sm-9">Rapid Prototyping, Laser Cutter, Waterjet Cutter, Embedded C++ firmware, CAD Design, PID Control, Electrical Circuit Design, Unit Testing</dd>
+                    <dt class="col-sm-3 text-truncate">Key Technologies</dt>
+                    <dd class="col-sm-9">C++, STM32 Blue Pill, OnShape </dd>
+                  </dl>
+                  <p class="text-left mt-3"> 
+                    One of the most fun projects I have been a part of, we worked in groups of four to tackle this years challenge. To construct the actual physical robot, we 
+                    used OnShape CAD platform to design all parts, and the assembly as a whole. We then used various methods to prototype and eventually build our chasse including
+                    the use of hand tools, laser cutter, and waterjet cutter. Below, you can see our first prototype, our final CAD model, and ultimately the robot we built!
+                  </p>
+                </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col-lg-4 align-self-center">
+                <img class="img-fluid" src="img/firstproto.jpg" alt="">
+              </div>
+              <div class="col-lg-4 align-self-center">
+                <img class="img-fluid" src="img/secondproto.png" alt="">
+              </div>
+              <div class="col-lg-4 mb-5 align-self-center">
+                <img class="img-fluid" src="img/finalproto.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-lg-6 align-self-center mx-auto">
+                <h6 class="text-left align-self-center">The Drivetrain</h6>
+                <p class="text-left">
+                  We chose to use a timing belt to supply each wheel with power from two motors, geared using a 2:1 ratio. We chose this design to maximize the speed
+                  we were able to travel at, while still meeting our basic torque requirements to travel up inclined surfaces.
+                </p>
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img class = "img-fluid" src="img/drivetrain.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-lg-4 mx-auto">
+                <img class = "img-fluid" src="img/robotcircuits.JPG" alt="">
+              </div>
+              <div class="col-lg-6 align-self-center mx-auto">
+                <h6 class="text-left align-self-center">The Crossbar</h6>
+                <p class="text-left">
+                  To make our microcontroller, H-Bridges, and QRD 1114 light sensor array circuitry accesible, we designed a crossbar to allow for easy debugging.
+                  With this design, all electrical components were easily seen and accessed, and the downtime due to any major electrical changes was minimized.
+                  The cross-bar also assisted in reinforcing linear slide structure which guided the claw carriage.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-lg-6 align-self-center mx-auto">
+                <h6 class="text-left align-self-center">The Claw</h6>
+                <p class="text-left">
+                  Our main strategy relied on picking up the infinity stones from their platforms. This required our claw to be able to hold onto the 
+                  collected stones until we have reached our home area, then release the stones into their respective holes. We used a small servo motor
+                  connected to two meshing gears with 5 inch arms.
+                </p>
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img class = "img-fluid" src="img/robotclaw.JPG" alt="">
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-lg-4 mx-auto">
+                <img class = "img-fluid" src="img/robotwinch.jpg" alt="">
+              </div>
+              <div class="col-lg-6 align-self-center mx-auto">
+                <h6 class="text-left align-self-center">The Claw</h6>
+                <p class="text-left">
+                  To raise and lower our claw carriage to match the appropriate height of the infinity stones, we used a winch or spool mechanism. To raise
+                  the claw we would simply spin the winch motor which would wrap the string about the spool, providing a tension force parallel to the 
+                  supporting rails.
+                </p>
+              </div>
+            </div>
+            
+            <div class="col-lg-8 mx-auto mt-5">
+              <div class="row mt-2">
+                <h4 class="text-left">The Results</h4>
+                <p class="text-left">
+                  After months of hard work, our team was fortunate enough to come first place the 2019 UBC Engineering Physics robot competition! The pictures below
+                  are the team (Josh White, Kritika Joshi, Josh Zindler, and myself), shortly after receiving our first place prizes, and our final competition-ready
+                  robot.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-lg-6 align-self-center mx-auto">
+                <img class="img-fluid" src="img/teamphoto.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img class="img-fluid" src="img/robotpic.jpg" alt="">
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
