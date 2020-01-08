@@ -111,7 +111,7 @@
             <p class="text-muted mb-4">
               A PDF of my current resume can be found at the following link.
             </p>
-            <a href="Resume/Ben Huckell Resume 2020.pdf" download>Ben Huckell - Resume 2020</a>
+            <a href="Files/Ben Huckell Resume 2020.pdf" download>Ben Huckell - Resume 2020</a>
             
           </div>
         </div>
@@ -172,8 +172,8 @@
         </a>
         <div class="portfolio-caption border border-white border-top-0">
           <h4>Machine Learning Self-Driving Car Simulation</h4>
-          <p class="text-muted">Navigate simulated world with computer vision, capture license plate 
-            images and process with trained neural network
+          <p class="text-muted">Navigating a simulated world with computer vision, capturing license plate 
+            images and processing with trained neural network
           </p>
         </div>
       </div>
@@ -533,6 +533,18 @@
               </div>
             </div>
 
+
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <ul class="list-inline">
+                  <li>Last Updated: January, 2020</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="model" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -553,21 +565,140 @@
             <div class="col-lg-8 mx-auto">
               <div class="model-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="model" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+                <h2 class="text-uppercase">Machine Learning Self-Driving Car Simulation</h2>
+                <p class="item-intro text-muted">Navigating a simulated world with computer vision, capturing license plate 
+                  images and processing with trained neural network</p>
+                <p>
+                <h4 class="text-left">The Context</h4>
+                <p class=" text-left mb-3 mt-2">
+                  A brand new course added to Engineering Physics this year, ENPH 353 is a project based course where teams of two were challenged to program a robot 
+                  capable of navigating a simulated world, avoiding obstacles, and collecting license plate information from various parked cars. Correctly labelling the 
+                  location and license plate number of parked car would yield points, whereas any off-road travel or collisions with 
+                  world elements would deduct points.
+                </p>
+                <h4 class="text-left mt-5 mb-3">The Project</h4>
+                <dl class="row">
+                  <dt class="col-sm-3">Key Skills</dt>
+                  <dd class="col-sm-9">Machine Learning, Machine Vision, Neural Networks, Image Processing, Reinforcement Learning</dd>
+                  <dt class="col-sm-3 text-truncate">Key Technologies</dt>
+                  <dd class="col-sm-9">Linux, Gazebo, ROS, OpenCV, TensorFlow, Keras, Git, Python </dd>
+                </dl>
+                <p class="text-left mt-3"> 
+                  For anyone so inclined, our full-length final report can be found using the following link, but I will provide a shortened summary below nevertheless.
+                </p>
+                <a href="Files/ENPH353 Final Report.pdf" download>ENPH 353 Final Report</a>
+                  
               </div>
             </div>
           </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-6 align-self-center mx-auto">
+              <h6 class="text-left align-self-center">The World</h6>
+              <p class="text-left">
+                The following image captures a top view of the gazebo simulation world that our robot operated in. Our robot (in white) is shown at its 
+                starting position on the road and the "parked cars" are represented by the blue rectangles placed throughout the course at various 
+                "parking locations". Our objective was to navigate the roads, and collect the license plate information of all cars along our path.
+              </p>
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img class = "img-fluid" src="img/robotcourse.png" alt="">
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-6 align-self-center mx-auto">
+              <h6 class="text-left align-self-center">Camera Input</h6>
+              <p class="text-left">
+                The operation of our robot relied only on the camera input feed it recieved from the virtual world. Within the gazebo simulation, a camera 
+                mounted on the top of the robot facing forwards continuously fed our system with an image feed. The following image shows an example of the 
+                image we would recive back.
+              </p>
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img class = "img-fluid" src="img/camerainput.png" alt="">
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-8 mx-auto">
+              <h6 class="text-left align-self-center">Our Architecture</h6>
+              <p class="text-left">
+                Since the only input to our system was the camera feed, our system needed to be capable 
+                of transforming an input image into output commands through a series of callbacks and algorthims. At a very high level, this architecture 
+                can be summarized in the following diagram.
+              </p>
+              <img class = "img-fluid" src="img/Design Architecture.png" alt="">
+              <p class="text-left">
+                Each "callback" is essentially an asychronously running method responsible for handling a specific aspect of our robots operation. For example, 
+                our "Car Callback" handles capturing images of the parked cars as well as avoiding the roaming truck which circles the middle track.
+                After we have successfully navigated the course, our system has captured multiple images of each parked car we have passed.
+              </p>
+              <p class="text-left">
+                After capturing images of all parked cars, an "Objective Completed" flag withing our system gets set True. This starts the execution of our License Plate
+                Image Processing Callback. 
+              </p>
+              <h6 class="text-left">License Plate Image Processing</h6>
+              <p class="text-left">
+                These images are first filtered and cropped to identify the portion of the image which has the parking location and plate number 
+                information. Below, the images show some examples of the unfiltered captured images, followed by the process of locating the areas of the image
+                which hold the information we are looking for. It is worth noting that some of the images we capture are not completely in focus. Regardles, our
+                algorithm was able to correctly identify and crop the images for further processing. After filtering the images, we send them through our pre-trained neural network which outputs the parking location and licence plate number to the 
+                terminal and scoreboard.
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-5 align-self-center mx-auto">
+              <img class="img-fluid" src="img/carcapture.jpg" alt="">
+            </div>
+            <div class="col-lg-7 align-self-center">
+              <img class="img-fluid" src="img/platepic3.png" alt="">
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-6 align-self-center mx-auto">
+              <h6 class="text-left align-self-center">Demo Run</h6>
+              <p class="text-left">
+                The following video shows a captured demo run of our finished robot. A top down view on the right portion of the screen shows the robots 
+                progress through its path, whereas the left portion of the screen shows the world through the eyes of the robot. There are a few other key points 
+                worth noting:
+              </p>
+              <p class="text-left">
+                Within gazebo, we had to deal with the constraint that output commands were discrete in nature, meaning there was only a finite 
+                set of commands that we could give. In our case, this meant that we could not publish "go forward" and "turn left" commands at the same
+                time. The result is that our robot looks very jittery as it travels. Its worth noting that this is simply a limitation of the platform
+                the simulation was running in.
+              </p>
+              <p class="text-left">
+                Bounding boxes can be seen throughout the video. Parked cars are represented with blue bounding boxes, pedestrians with red (or green)
+                depending on their position, and the roaming truck with a yellow bounding box. The identification of these objects of interest were what 
+                we used to make decisions within our code.
+              </p>
+              <p class="text-left">
+                At the very end of the video, all captured license plates are printed to the terminal in the top left corner of the screen.
+              </p>
+            </div>
+            <div class="col-lg-6 mx-auto align-self-center">
+              <div class="embed-responsive embed-responsive-16by9 text-center">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-LxopGj8DLo"></iframe>
+              </div>
+            </div>
+          </div>
+
+
+
+          </p>
+          <ul class="list-inline">
+            <li>Date: January 2017</li>
+            <li>Client: Finish</li>
+            <li>Category: Identity</li>
+          </ul>
+          <button class="btn btn-primary" data-dismiss="model" type="button">
+            <i class="fas fa-times"></i>
+            Close Project</button>
         </div>
       </div>
     </div>
