@@ -23,6 +23,17 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154924875-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154924875-1');
+  </script>
+
+
 </head>
 
 <body id="page-top">
@@ -522,14 +533,14 @@
             </div>
 
             <div class="row mt-2">
-              <div class="col-lg-4 mx-auto">
-                <img class = "img-fluid" src="img/robotwinch.jpg" alt="">
-              </div>
               <div class="col-lg-6 align-self-center mx-auto">
-                <h6 class="text-left align-self-center">The State Machine</h6>
+                <h6 class="text-left align-self-center">The Code</h6>
                 <p class="text-left">
-                  
+                  We designed our code with object-oriented state machine to control program flow. Each state represented an important  
                 </p>
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img class = "img-fluid" src="img/robotclaw.JPG" alt="">
               </div>
             </div>
             
@@ -779,7 +790,7 @@
           <div class="row mt-5">
             <div class="col-lg-8 align-self-center mx-auto">
               <p class="text-left">
-                If we consider a hyptothetical league that only considers Home Runs to score points, it would be very easy to determine the better choice.
+                If we consider a hypothetical league that only considers Home Runs to score points, it would be very easy to determine the better choice.
                 Player A is likely to get more Home Runs than Player B - therefore I would choose Player A. However, if we were to introduce a league where both Home
                 Runs and Batting Average were included, it becomes much less clear who the better choice is. This is where the concept of a Z-Score comes in.
               </p>
@@ -793,7 +804,7 @@
                 A Z-Score is a common statistical variable which measures the number of standard deviations a number is away from the mean of the data set, for 
                 each category. This allows players to be compared, in each category, to the other players in the league. By measuring the number of standard 
                 deviations a number is from the mean of all players in the league, we can directly compare Home Runs to Batting Average and, by extension, Player 
-                A to Player B. The following formula shows the Z-Score formula used.
+                A to Player B. The following is the Z-Score formula.
               </p>
             </div>
             <div class="col-lg-4 mx-auto align-self-center">
@@ -810,7 +821,7 @@
             <div class="col-lg-8 align-self-center mx-auto">
               <p class="text-left">
                 Once we are able to directly compare a player's performance to all other players, category by category, we can then sum each players individual
-                Z-Scores from each category, to get one "overall" Z-Score. This is exactly how I am able to turn all of the numbers that come with each player, 
+                Z-Scores from each category, to get one "overall" Z-Score. This is exactly how I am able to convert multiple numbers across many different categories,
                 into one, meaningful number.
               </p>
             </div>
@@ -820,10 +831,10 @@
             <div class="col-lg-8 align-self-center mx-auto">
               <h6 class="text-left align-self-center">Data Collection</h6>
               <p class="text-left">
-                There are countless websites which offer free player projections, organized by category. For my projections I am using Python's BeautifulSoup library
-                to scrape fangraphs.com for its "Steamer" fantasy baseball projections. Once I gather all the data for each player, I save the content into a Microsoft SQL
+                There are countless websites which offer free player projections, organized by category. For my projections, I used Python's BeautifulSoup library
+                to scrape fangraphs.com for its "Steamer" fantasy baseball projections. Once I gathered all the data for each player, I saved the content into a Microsoft SQL
                 server for easy table manipulation later on. The following images show the Steamer projections, as well as the saved table within Microsoft SQL. 
-                Saving all of the information here makes the data very easily accessible from the Visual C# program I use to calculated performance estimates.
+                Saving all of the information here made the data very easily accessible from the Visual C# program I used to calculated performance estimates.
               </p>
             </div>
           </div>
@@ -840,7 +851,7 @@
           <div class="row mt-5">
             <div class="col-lg-8 align-self-center mx-auto">
               <p class="text-left">
-                Now that I have gathered all of the statistics I could ever need, the only remaining problem was ensuring that my main program worked for a variety of
+                Now that I have gathereded all of the statistics I need, the only remaining problem was ensuring that my main program worked for a variety of
                 fantasy league formats. Some fantasy leagues are points-based, some are rotiserrie-based, each includes different required positions to fill, and many 
                 determine winners based on custom-selected categories. The program needed to include some functionality for the user to define the specifications of their 
                 league, and the calculated Z-Score would be specific to their setup.
@@ -853,8 +864,8 @@
             <div class="col-lg-6 align-self-center mx-auto">
               <h6 class="text-left align-self-center">Define League Specifications</h6>
               <p class="text-left">
-                To make sure that my program is robust enough to handle a variety of possible fantasy baseball leagues, all parameters involved in the Z-Score 
-                calculation are based on the league parameters that the user enters. The UI of this league selection screen is shown in the image. Users can name 
+                To make sure that my program was robust enough to handle a variety of possible fantasy baseball leagues, all parameters involved in the Z-Score 
+                calculation are based on the league parameters that the user enters. The User Interface of this league selection screen is shown in the image. Users can name 
                 their league, set their roster composition, and determine which metrics are used to calculate points, including the relative weight of each metric involved.
                 This is done for both hitters and pitchers.
               </p>
@@ -866,22 +877,25 @@
 
 
           <div class="row mt-5">
-            <div class="col-lg-6 align-self-center mx-auto">
-              <h6 class="text-left align-self-center">The Results</h6>
+            <div class="col-lg-8 align-self-center mx-auto">
+              <h4 class="text-left align-self-center">The Results</h4>
               <p class="text-left">
-                By referencing this table, which is custom generated for each set of parameters defined by the user, does the job of reducing all of the 
-                available player statistics and projections into one number. Taking personal bias out of the equation, players are compared simply in 
-                reference to each other, and ranks are clear. I have solved the arbitrary player selection dilemna.
+                The following table is custom generated for each set of parameters defined by the user. It reduces all of the available player statistics 
+                and projections into one number (the "Score"). Taking personal bias out of the equation, players are compared simply in 
+                reference to each other, and ranks are clear.
               </p>
               <p class="text-left">
                 For the past three years, I have tasked this program with selecting my teams in my annual fantasy league. Simply basing my player picks on their
-                Z-Score, I have finished second place one year, and won the league the other two years.
+                overall Z-Score, I have won twice, and finished in second place once.
               </p>
             </div>
-            <div class="col-lg-6 mx-auto align-self-center">
+          </div>
+
+          <row class="mt-5">
+            <div class="col-lg-8 mx-auto align-self-center">
               <img class = "img-fluid" src="img/guitable.PNG" alt="">
             </div>
-          </div>
+          </row>
                 
                 <ul class="list-inline">
                   <li>Last Updated: January, 2020</li>
