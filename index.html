@@ -759,35 +759,59 @@
           </div>
 
           <div class="row mt-5">
+            <div class="col-lg-8 align-self-center mx-auto">
+              <h6 class="text-left align-self-center">Z-Score Calculations</h6>
+              <p class="text-left">
+                To make well informed decisions, I needed to reduce all of the projected statistics into one single number. But the tricky part was comparing 
+                metrics that are so fundamentally different. How would one compare stolen bases to strikeouts? Walks to home runs? Lets look at an example 
+                with two different hyptothetical players, with their Home Run and Batting Average projections for the following year.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 mx-auto align-self-center">
+              <img class = "img-fluid" src="img/Player Comparison.png" alt="">
+            </div>
+          </div>
+
+          
+          <div class="row mt-5">
+            <div class="col-lg-8 align-self-center mx-auto">
+              <p class="text-left">
+                If we consider a hyptothetical league that only considers Home Runs to score points, it would be very easy to determine the better choice.
+                Player A is likely to get more Home Runs than Player B - therefore I would choose Player A. However, if we were to introduce a league where both Home
+                Runs and Batting Average were included, it becomes much less clear who the better choice is. This is where the concept of a Z-Score comes in.
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-5">
             <div class="col-lg-6 align-self-center mx-auto">
               <h6 class="text-left align-self-center">Performance Metric - Z-Score</h6>
               <p class="text-left">
                 A Z-Score is a common statistical variable which measures the number of standard deviations a number is away from the mean of the data set, for 
-                each category. The following formula shows this, where:
+                each category. This allows players to be compared, in each category, to the other players in the league. By measuring the number of standard 
+                deviations a number is from the mean of all players in the league, we can directly compare Home Runs to Batting Average and, by extension, Player 
+                A to Player B. The following formula shows the Z-Score formula used.
               </p>
+            </div>
+            <div class="col-lg-4 mx-auto align-self-center">
+              <img class = "img-fluid" src="img/zscore.png" alt="">
               <ul class="list-unstyled">
                 <li class="font-weight-bold">X = Raw Value</li>
                 <li class="font-weight-bold">μ = Mean of Data Set</li>
                 <li class="font-weight-bold">σ = Standard Deviation of Data Set</li>
               </ul>
             </div>
-            <div class="col-lg-4 mx-auto align-self-center">
-              <img class = "img-fluid" src="img/zscore.png" alt="">
-            </div>
           </div>
 
           <div class="row mt-5">
             <div class="col-lg-8 align-self-center mx-auto">
-              <h6 class="text-left align-self-center">Z-Score Calculations</h6>
               <p class="text-left">
-                To make well informed decisions, I needed to reduce all of the projected statistics into one single number - the overall Z-Score. This number 
-                is computed by summing the individual Z-Scores calculated for each player, in each category. Each category (e.g. Home Runs) represents a seperate
-                data set with a unique mean and standard deviation, therefore the calculations must be done independently.
-              </p>
-              <p class="text-left">
-                Although I have found a way to reduce all the numbers for each player into one overall Z-Score, some other challenges still remain. I still
-                needed to find a way to collect all of the available player projection data, and store it such that it values are easily accessed from my Z-Score 
-                calculation algorithm.
+                Once we are able to directly compare a player's performance to all other players, category by category, we can then sum each players individual
+                Z-Scores from each category, to get one "overall" Z-Score. This is exactly how I am able to turn all of the numbers that come with each player, 
+                into one, meaningful number.
               </p>
             </div>
           </div>
@@ -797,10 +821,24 @@
               <h6 class="text-left align-self-center">Data Collection</h6>
               <p class="text-left">
                 There are countless websites which offer free player projections, organized by category. For my projections I am using Python's BeautifulSoup library
-                to scrape fangraphs.com for its "Steamer" fantasy baseball projections. Once I gather all data for each player, I save the content into a Microsoft SQL
+                to scrape fangraphs.com for its "Steamer" fantasy baseball projections. Once I gather all the data for each player, I save the content into a Microsoft SQL
                 server for easy table manipulation later on. The following images show the Steamer projections, as well as the saved table within Microsoft SQL. 
                 Saving all of the information here makes the data very easily accessible from the Visual C# program I use to calculated performance estimates.
               </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 align-self-center mx-auto">
+              <img class="img-fluid" src="img/fangraphs2.png" alt="">
+            </div>
+            <div class="col-lg-6 align-self-center mx-auto">
+              <img class="img-fluid" src="img/dbpic.PNG" alt="">
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-8 align-self-center mx-auto">
               <p class="text-left">
                 Now that I have gathered all of the statistics I could ever need, the only remaining problem was ensuring that my main program worked for a variety of
                 fantasy league formats. Some fantasy leagues are points-based, some are rotiserrie-based, each includes different required positions to fill, and many 
@@ -809,6 +847,7 @@
               </p>
             </div>
           </div>
+
 
           <div class="row mt-5">
             <div class="col-lg-6 align-self-center mx-auto">
@@ -825,17 +864,6 @@
             </div>
           </div>
 
-
-
-
-          <div class="row">
-            <div class="col-lg-6 align-self-center mx-auto">
-              <img class="img-fluid" src="img/fangraphs2.png" alt="">
-            </div>
-            <div class="col-lg-6 align-self-center mx-auto">
-              <img class="img-fluid" src="img/dbpic.PNG" alt="">
-            </div>
-          </div>
 
           <div class="row mt-5">
             <div class="col-lg-6 align-self-center mx-auto">
