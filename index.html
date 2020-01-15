@@ -114,10 +114,10 @@
             </p>
             <p class="text-muted mb-4">
               I am currently a fourth-year Engineering Physics student at The University
-               of British Columbia in Vancouver, British Columbia. I am working towards 
+               of British Columbia in Vancouver, BC. I am working towards 
                a specialization in mechatronics, and a minor in computer science, and 
-               expect to graduate in December, 2021.
-              Feel free to reach out to me any time, I would love to chat about some of 
+               I expect to graduate in December, 2021.
+              Feel free to reach out to me at any time, I would love to chat about some of 
               the awesome projects and teams I have been (or am still) a part of!   
             </p>
             <p class="text-muted mb-4">
@@ -288,7 +288,7 @@
               <h4 class="text-left">The Context</h4>
               <p class=" text-left mb-3 mt-2">
                 In order to properly quantify the performance of our various engine iterations, we needed to build 
-                a dedicated engine testing stand capable of delivering the necessary fuel and oxidizer and handling
+                a dedicated engine testing stand capable of delivering the necessary fuel and oxidizer, and handling
                 the thrust from the combustion reaction.
               </p>
               <h4 class="text-left mt-5 mb-3">The Project</h4>
@@ -312,7 +312,7 @@
 
           <div class="row mt-5">
             <div class="col-lg-6 align-self-center">
-              <p class="text-left">The following video captures a second 1 second hot fire test of our second generation engine.
+              <p class="text-left">The following video captures a 1 second hot fire test of our second generation engine.
                 On the left side of the video, the remotely-operated test stand can be seen before ignition. 
               </p>
               <p class="text-left">
@@ -354,7 +354,7 @@
                 <dd class="col-sm-9">Python, C++, Git, Teensy 4.0 Microcontroller</dd>
               </dl>
               <p class="text-left mt-3"> 
-                The rocket avionics system must be able to perform all necessary safety checks in the process of fueling, igintion, and eventually flight.
+                The rocket avionics system must be able to perform all necessary safety checks in the process of fueling, ignition, and eventually flight.
                 Through its flight, the system must constantly monitor its GPS location, acceleration, and altitude. Our GPS and accelerometer units will
                 eventually act as the primary data collection hardware. Location and acceleration values are taken straight from the readings we recieve 
                 from these devices. 
@@ -363,19 +363,19 @@
               <p class="text-left mt-3"> 
                 I was responsible for building a robust, object-oriented state machine capable of keeping track of our rocket's status before and after launch.
                 I implemented this solution in C++, where each state represents a critical phase of the launch and recovery sequence. Our prelimiary state diagram,
-                including state transition criteria and state actions are shown in the table below.
+                including state transition criteria and state actions are shown in the diagram below.
               </p>
               <img class="img-fluid" src="img/Avionics State Machine (1).jpg" alt="">
 
               <h6 class="text-left mb-3 mt-4">Altitude Detection</h6>
               <p class="text-left mt-3"> 
-                For low-flying rockets that stay well within the bounds of earths atmosphere, a differential pressure sensor can be directly used to calculate
-                our altitude via the application of the barometric formula. However, with a rocket that is being sent to space, the atmosphere is so thin at higher
+                For low-flying rockets that stay well within the bounds of Earth's atmosphere, a differential pressure sensor can be directly used to calculate
+                our altitude via the application of the Barometric formula. However, with a rocket that is being sent to space, the atmosphere is so thin at higher
                 altitudes, that this method of calculating altitude is far too unreliable.
               </p>
 
               <p class="text-left mt-3"> 
-                Correctly measuring the altitude of our rocket in flight is vital to the deployment of our recovery system after we have reached our target apogee.
+                Correctly measuring the altitude of our rocket in-flight is vital to the deployment of our recovery system after we have reached our target apogee.
                 Since we cannot directly measure pressure, we must use the kinematics of the flight path, augmented with a Kalman filter to accurately predict
                 and measure where we are in our flight path. We are still in the process of verifying our algorithm's functionality, and testing its implementation 
                 throughly. Below are the results we have obtained thus far, using data gathered from our last 30,000 ft rocket "Sky Pilot" which launched this past
@@ -452,7 +452,7 @@
                   </dl>
                   <p class="text-left mt-3"> 
                     One of the most fun projects I have been a part of, we worked in groups of four to tackle this years challenge. To construct the actual physical robot, we 
-                    used OnShape CAD platform to design all parts, and the assembly as a whole. We then used various methods to prototype and eventually build our chasse including
+                    used the OnShape CAD platform to design all parts, and the assembly as a whole. We then used various methods to prototype and eventually build our chasse including
                     the use of hand tools, laser cutter, and waterjet cutter. Below, you can see our first prototype, our final CAD model, and ultimately the robot we built!
                   </p>
                 </div>
@@ -468,12 +468,6 @@
               </div>
               <div class="col-lg-4 mb-5 align-self-center">
                 <img class="img-fluid" src="img/finalproto.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="row mt-2">
-              <div class="col-lg-8 mx-auto">
-                <h4 class="text-left">Key Features</h4>
               </div>
             </div>
 
@@ -497,9 +491,9 @@
               <div class="col-lg-6 align-self-center mx-auto">
                 <h6 class="text-left align-self-center">The Crossbar</h6>
                 <p class="text-left">
-                  To make our microcontroller, H-Bridges, and QRD 1114 light sensor array circuitry accesible, we designed a crossbar to allow for easy debugging.
+                  To make our microcontroller, H-Bridges, and QRD 1114 light sensor array circuitry accessible, we designed a crossbar to allow for easy debugging.
                   With this design, all electrical components were easily seen and accessed, and the downtime due to any major electrical changes was minimized.
-                  The cross-bar also assisted in reinforcing linear slide structure which guided the claw carriage.
+                  The crossbar also assisted in reinforcing the linear slide structure which guided the claw carriage.
                 </p>
               </div>
             </div>
@@ -510,7 +504,7 @@
                 <p class="text-left">
                   Our main strategy relied on picking up the infinity stones from their platforms. This required our claw to be able to hold onto the 
                   collected stones until we have reached our home area, then release the stones into their respective holes. We used a small servo motor
-                  connected to two meshing gears with 5 inch arms.
+                  connected to two meshing gears with 5 inch arms to complete this task.
                 </p>
               </div>
               <div class="col-lg-4 mx-auto">
@@ -536,11 +530,16 @@
               <div class="col-lg-6 align-self-center mx-auto">
                 <h6 class="text-left align-self-center">The Code</h6>
                 <p class="text-left">
-                  We designed our code with object-oriented state machine to control program flow. Each state represented an important  
+                  We designed an object-oriented state machine to control our main program flow. Each state represented a distinct task that the robot was 
+                  required to complete. For example, we had one "Line Following" state which simply kept our robot centered on a continuous strip of black tape,
+                  using input data collected from our QRD Light sensor array. The following video shows one of our practice runs, where we were able to successfully
+                  collect three infinity stones. 
                 </p>
               </div>
-              <div class="col-lg-4 mx-auto">
-                <img class = "img-fluid" src="img/robotclaw.JPG" alt="">
+              <div class="col-lg-6 mx-auto">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7qbm6gMkS-k"></iframe>
+                </div>
               </div>
             </div>
             
@@ -604,7 +603,7 @@
                 <p class=" text-left mb-3 mt-2">
                   A brand new course added to Engineering Physics this year, ENPH 353 is a project based competition course where teams of two were challenged to program a robot 
                   capable of navigating a simulated world, avoiding obstacles, and collecting license plate information from various parked cars. Correctly labelling the 
-                  location and license plate number of parked car would yield points, whereas any off-road travel or collisions with 
+                  location and license plate number of parked cars would yield points, whereas any off-road travel or collisions with 
                   world elements would deduct points.
                 </p>
                 <h4 class="text-left mt-5 mb-3">The Project</h4>
@@ -643,7 +642,7 @@
               <p class="text-left">
                 The operation of our robot relied solely on the camera input feed it received from the virtual world. Within the gazebo simulation, a camera 
                 mounted on the top of the robot facing forwards continuously fed our system with an image feed. The following image shows an example of the 
-                image we would recive back.
+                frame we would recive back.
               </p>
             </div>
             <div class="col-lg-4 mx-auto">
@@ -662,7 +661,8 @@
               <img class = "img-fluid" src="img/Design Architecture.png" alt="">
               <p class="text-left">
                 Each "callback" is essentially an asychronously running method responsible for handling a specific aspect of our robots operation. For example, 
-                our "Car Callback" handles capturing images of the parked cars, as well as avoiding the roaming truck which circles the middle track.
+                our "Car Callback" handles capturing images of the parked cars, as well as avoiding the roaming truck which circles the middle track. Our "Navigation 
+                Callback" uses the camera feed to stay centered within the road, and to properly stop at crosswalks.
                 After we have successfully navigated the course, our system has captured multiple images of each parked car we have passed.
               </p>
               <p class="text-left">
@@ -675,7 +675,7 @@
                 information. Below, the images show an example of the unfiltered captured images, followed by the process of locating the areas of the image
                 which hold the information we are looking for. It is worth noting that some of the images we capture are not completely in focus. Regardles, our
                 algorithm was able to correctly identify and crop the images for further processing. After filtering the images, we send them through our pre-trained 
-                neural network which outputs the parking location and licence plate number to the terminal and scoreboard.
+                neural network which outputs the parking location and licence plate number to the terminal and scoreboard with an accuracy of 98%.
               </p>
             </div>
           </div>
@@ -775,7 +775,7 @@
               <p class="text-left">
                 To make well informed decisions, I needed to reduce all of the projected statistics into one single number. But the tricky part was comparing 
                 metrics that are so fundamentally different. How would one compare stolen bases to strikeouts? Walks to home runs? Lets look at an example 
-                with two different hyptothetical players, with their Home Run and Batting Average projections for the following year.
+                with two different hypothetical players, with their Home Run and Batting Average projections for the following year.
               </p>
             </div>
           </div>
@@ -801,8 +801,7 @@
             <div class="col-lg-6 align-self-center mx-auto">
               <h6 class="text-left align-self-center">Performance Metric - Z-Score</h6>
               <p class="text-left">
-                A Z-Score is a common statistical variable which measures the number of standard deviations a number is away from the mean of the data set, for 
-                each category. This allows players to be compared, in each category, to the other players in the league. By measuring the number of standard 
+                A Z-Score is a common statistical variable which measures the number of standard deviations a number is away from the mean of a data set. This allows players to be compared, in each category, to the other players in the league. By measuring the number of standard 
                 deviations a number is from the mean of all players in the league, we can directly compare Home Runs to Batting Average and, by extension, Player 
                 A to Player B. The following is the Z-Score formula.
               </p>
@@ -851,8 +850,8 @@
           <div class="row mt-5">
             <div class="col-lg-8 align-self-center mx-auto">
               <p class="text-left">
-                Now that I have gathereded all of the statistics I need, the only remaining problem was ensuring that my main program worked for a variety of
-                fantasy league formats. Some fantasy leagues are points-based, some are rotiserrie-based, each includes different required positions to fill, and many 
+                Now that I have gathered all of the statistics I need, the only remaining problem was ensuring that my main program worked for a variety of
+                fantasy league formats. Some fantasy leagues are points-based, some are rotisserie-based, each includes different required positions to fill, and many 
                 determine winners based on custom-selected categories. The program needed to include some functionality for the user to define the specifications of their 
                 league, and the calculated Z-Score would be specific to their setup.
               </p>
