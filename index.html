@@ -188,7 +188,7 @@
         </a>
         <div class="portfolio-caption border border-white border-top-0">
           <h4>Fantasy Baseball Draft Optimization Software</h4>
-          <p class="text-muted">Determine a player's true value, looking past the statistics</p>
+          <p class="text-muted">Determine a player's true value, looking past the numbers</p>
         </div>
       </div>
     </div>
@@ -664,8 +664,18 @@
               <p class="text-left">
                 The following video shows a captured demo run of our finished robot. A top down view on the right portion of the screen shows the robots 
                 progress through its path, whereas the left portion of the screen shows the world through the eyes of the robot. There are a few other key points 
-                worth noting:
+                worth noting below.
               </p>
+            </div>
+            <div class="col-lg-6 mx-auto align-self-center">
+              <div class="embed-responsive embed-responsive-16by9 text-center">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-LxopGj8DLo"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-8 mx-auto align-self-center">
               <p class="text-left">
                 Within gazebo, we had to deal with the constraint that output commands were discrete in nature, meaning there was only a finite 
                 set of commands that we could give. In our case, this meant that we could not publish "go forward" and "turn left" commands at the same
@@ -680,11 +690,6 @@
               <p class="text-left">
                 At the very end of the video, all captured license plates are printed to the terminal in the top left corner of the screen.
               </p>
-            </div>
-            <div class="col-lg-6 mx-auto align-self-center">
-              <div class="embed-responsive embed-responsive-16by9 text-center">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-LxopGj8DLo"></iframe>
-              </div>
             </div>
           </div>
 
@@ -718,10 +723,123 @@
             <div class="col-lg-8 mx-auto">
               <div class="model-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2 class="text-uppercase">Fantasy Baseball Draft Optimization Software</h2>
+                <p class="item-intro text-muted">Determine a player's true value, looking past the numbers</p>
+                <h4 class="text-left">The Context</h4>
+                <p class=" text-left mb-3 mt-2">
+                  Participating in a fantasy baseball league is an annual tradition amongst my friends. However, year after year I began to notice
+                  that I was picking specific players either because I recognized their name and liked them, or some "fantasy expert" said they would
+                  have a great year. In either case, I was not making a well-informed or justified selection. There had to be a way to reduce the countless
+                  numbers and expert recommendations into one number.
+                </p>
+                <h4 class="text-left mt-5 mb-3">The Project</h4>
+                <dl class="row">
+                  <dt class="col-sm-3">Key Skills</dt>
+                  <dd class="col-sm-9">Statistical Analysis, Z-Scores, Relational Databases, User Interfaces</dd>
+                  <dt class="col-sm-3 text-truncate">Key Technologies</dt>
+                  <dd class="col-sm-9">Python, SQL, C#, BeautifulSoup, Tkinter Python Libraries </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-6 align-self-center mx-auto">
+              <h6 class="text-left align-self-center">Define League Specifications</h6>
+              <p class="text-left">
+                To make sure that my program is robust enough to handle a variety of possible fantasy baseball leagues, all parameters involved in the Z-Score 
+                calculation are based on the league parameters that the user enters. The UI of this league selection screen is shown in the image. Users can name 
+                their league, set their roster composition, and determine which metrics are used to calculate points, including the relative weight of each metric involved.
+                This is done for both hitters and pitchers.
+              </p>
+            </div>
+            <div class="col-lg-6 align-self-center mx-auto">
+              <img class = "img-fluid" src="img/newleagueoptions.PNG" alt="">
+            </div>
+          </div>
+
+
+          <div class="row mt-5">
+            <div class="col-lg-8 align-self-center mx-auto">
+              <h6 class="text-left align-self-center">Data Collection</h6>
+              <p class="text-left">
+                There are countless websites which offer free player projections, organized by category. For my projections I am using Python's BeautifulSoup library
+                to scrape fangraphs.com for its "Steamer" fantasy baseball projections. Once I gather all data for each player, I save the content into a Microsoft SQL
+                server for easy table manipulation later on. The following images show the Steamer projections, as well as the saved table within Microsoft SQL. 
+                Saving all of the information here makes the data very easily accessible from the Visual C# program I use to calculated performance estimates.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 align-self-center mx-auto">
+              <img class="img-fluid" src="img/fangraphs2.png" alt="">
+            </div>
+            <div class="col-lg-6 align-self-center mx-auto">
+              <img class="img-fluid" src="img/dbpic.PNG" alt="">
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-6 align-self-center mx-auto">
+              <h6 class="text-left align-self-center">Performance Metric - Z-Score</h6>
+              <p class="text-left">
+                To make well informed decisions, I needed to reduce all of the projected statistics into one single number - the Z-Score. A Z-Score is a 
+                common statistical variable which measures the number of standard deviations a number is away from the mean of the data set, for each category. 
+                The following formula shows this, where:
+              </p>
+              <ul class="list-unstyled">
+                <li class="font-weight-bold">X = Raw Value</li>
+                <li class="font-weight-bold">μ = Mean</li>
+                <li class="font-weight-bold">σ = Standard Deviation</li>
+              </ul>
+            </div>
+            <div class="col-lg-4 mx-auto align-self-center">
+              <img class = "img-fluid" src="img/zscore.png" alt="">
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-6 align-self-center mx-auto">
+              <h4 class="text-left align-self-center">Z-Score Calculations</h4>
+              <p class="text-left">
+                Each player's Z-Score is a sum of their Z-Score in each included category. Each category (e.g. Home Runs) represents a seperate
+                data set with a unique mean and standard devation, therefore the calculations must be done independently. Individual category Z-Scores 
+                are simply computed using the Z-Score formula shown above, where the all parameters reference each specific category. The results are 
+                calculated, and presented in another window, where players can be sorted by any present category, in either ascending or descending order.
+              </p>
+            </div>
+            <div class="col-lg-6 mx-auto align-self-center">
+              <img class = "img-fluid" src="img/guitable.PNG" alt="">
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-8 align-self-center mx-auto">
+              <h6 class="text-left align-self-center">The Results</h6>
+              <p class="text-left">
+                By referencing this table, which is custom generator for each set of parameters defined by the user does the job of reducing all of the 
+                available player statistics and projections into one number. Taking personal bias out of the equation, players are compared simply in 
+                reference to each other, and ranks are clear. I have solved the arbitrary player selection dilemna.
+              </p>
+              <p class="text-left">
+                For the past three years, I have tasked this program with selecting my teams in my annual fantasy league. Simply basing my player picks on their
+                Z-Score, I have finished second place one year, and won the league the other two years.
+              </p>
+            </div>
+          </div>
+
+
+
+
+
+          
+                
+                
+                
+                
+                
+                
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Lines</li>
