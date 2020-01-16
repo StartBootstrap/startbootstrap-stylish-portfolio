@@ -15,6 +15,7 @@
    padding: 1.25rem 2.5rem;
  }
  .content-section-aboutme {
+     min-height: 30rem;
      padding-top: 4rem;
      padding-bottom: 4rem;
      padding-left: 1rem;
@@ -22,10 +23,24 @@
      position: relative;
      display: table;
      width: 100%;
-     height: auto;
+     height: 100%;
      
      background: linear-gradient(45deg , hsl(219, 51%, 36%) 56%, #155d74 56%);
    }
+
+.content-section-2 {
+   padding-top: 1rem;
+   padding-bottom: 4rem;
+   padding-left: 4rem;
+   padding-right: 4rem;
+   min-height: 30rem;
+   position: relative;
+   display: table;
+   width: 100%;
+   height: auto;
+ 
+   background-color: #1d809f;
+}
  .content-section {
    padding-top: 4rem;
    padding-bottom: 4rem;
@@ -37,7 +52,7 @@
    width: 100%;
    height: auto;
  
-   background-color: #00cdf1
+   background: linear-gradient(88deg, #401a57 ,#883d66, #d467d8);
  }
  .content-section-heading h2 {
    font-size: 3rem;
@@ -56,6 +71,7 @@
      font-style: "open sans";
      font-size: 24px;
    }
+
    
    h1,
    h2,
@@ -295,12 +311,18 @@
      -webkit-clip-path: inset(-1px);
      clip-path: inset(-1px);
    }
+   .portfolio-item h2 {
+     color: #34393d;
+   }
+   .portfolio-item p {
+     color: black;
+   }
    .portfolio-item:hover img {
      -webkit-clip-path: inset(2rem);
      clip-path: inset(2rem);
    }
    .portfolio-item:hover .caption {
-     background-color: rgba(29, 128, 159, 0.9);
+     background-color:#87c6db;
      -webkit-clip-path: inset(2rem);
      clip-path: inset(2rem);
    }
@@ -329,7 +351,7 @@
  a:active,
  a:focus,
  a:hover {
-   color: #155d74;
+   color: #87c6db;
  }
  /*.btn-primary {
    background-color: #1D809F !important;
@@ -346,9 +368,10 @@
  .btn-primary:active,
  .btn-primary:focus,
  .btn-primary:hover {
-   background-color: #00cdf1 !important;
-   border-color: transparent !important;
- }
+  /*background-color: #00cdf1 !important;*/
+  background-color: #1d809f !important;
+  border-color: transparent !important;
+}
  .btn-secondary {
    background-color: #ecb807 !important;
    border-color: #ecb807 !important;
