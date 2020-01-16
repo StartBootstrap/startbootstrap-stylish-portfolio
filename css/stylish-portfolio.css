@@ -11,16 +11,42 @@ html {
 }
 
 body {
+  font-family: 'Sans Serif';
 }
 
 .btn-xl {
   padding: 1.25rem 2.5rem;
 }
 
-.content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+.content-section-aboutme {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  
+  background: linear-gradient(45deg , hsl(219, 51%, 36%) 56%, #155d74 56%);
 }
+
+
+.content-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+
+  background-color: #00cdf1;
+}
+
 
 .content-section-heading h2 {
   font-size: 3rem;
@@ -31,14 +57,29 @@ body {
   text-transform: uppercase;
 }
 
+.content-section-aboutme h5 {
+  text-align: right;
+  font-family: "sans serif";
+}
+
+.content-section-aboutme h2 {
+  font-size: 16px;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-}
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2;
+  font-family: "helvetica";
+} 
+
+
+
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
@@ -68,7 +109,7 @@ h6 {
   height: 50px;
   text-align: center;
   color: white;
-  background: rgba(52, 58, 64, 0.5);
+  background: #00cdf1;
   line-height: 45px;
 }
 
@@ -92,7 +133,7 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/birds.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,6 +143,13 @@ h6 {
   font-size: 4rem;
   margin: 0;
   padding: 0;
+  color: #ffffff;
+}
+.masthead h3 {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 24px;
 }
 
 @media (min-width: 992px) {
@@ -320,15 +368,31 @@ a:hover, a:focus, a:active {
   color: #155d74;
 }
 
-.btn-primary {
+/*.btn-primary {
   background-color: #1D809F !important;
   border-color: #1D809F !important;
   color: #fff !important;
-}
+} */
+
+.btn-primary {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  outline: none;
+  color: #fff !important;
+} 
+
+/*button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+} */
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74 !important;
-  border-color: #155d74 !important;
+  background-color: #00cdf1 !important;
+  border-color: transparent !important;
 }
 
 .btn-secondary {
