@@ -52,6 +52,11 @@ html {
   color: #000000;
   font-weight: 300;
 }
+.content-section2 i {
+  padding: 5rem;
+  display: block;
+  size: 5px;
+}
  .content-section {
    padding-top: 4rem;
    padding-bottom: 4rem;
