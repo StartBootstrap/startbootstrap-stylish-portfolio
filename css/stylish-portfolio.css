@@ -30,16 +30,18 @@ html {
    padding: 1.25rem 2.5rem;
  }
 .content-section-2 {
-   border-radius: 25px;
-   border: 50px;
-   min-height: 30rem;
-   position: center;
-   
-   width: 100%;
-   height: auto;
-     
-   
-}
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+  
+    background: linear-gradient(88deg, #401a57 ,#883d66, #d467d8);
+  }
 .content-section-2 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 77px;
@@ -64,11 +66,11 @@ html {
    padding-right: 4rem;
    min-height: 30rem;
    position: relative;
-   display: table;
+   display: block;
    width: 100%;
    height: auto;
  
-   background: linear-gradient(88deg, #401a57 ,#883d66, #d467d8);
+   background: linear-gradient(88deg, #981ee4 ,#4e4e4e, #707070);
  }
  .content-section-heading h2 {
    font-size: 3rem;
@@ -91,7 +93,6 @@ html {
     font-weight: 200;
    }
 
-   
    h1,
    h2,
    h3,
@@ -106,6 +107,15 @@ html {
  .text-faded {
    color: rgba(255, 255, 255, 0.7);
  }
+.fab {
+  color: rgb(o, 0, 0);
+  padding: 40px;
+  font-size: 60px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
  .map {
    height: 30rem;
  }

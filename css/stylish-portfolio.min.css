@@ -28,16 +28,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
  .content-section-2 {
-    border-radius: 25px;
-    border: 50px;
-    min-height: 30rem;
-    position: center;
-    
-    width: 100%;
-    height: auto;
-    background: linear-gradient(32deg , hsla(210, 100%, 50%, 0.493) 56%, #1312496c 56%);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+
+  background: linear-gradient(88deg, #401a57,#883d66, #d467d8);
    }
  .content-section-2 h2 {
   font-family: 'Oswald', sans-serif;
@@ -51,23 +53,32 @@
   color: #000000;
   font-weight: 300;
 }
+.fab {
+  color: rgb(0, 0, 0);
+  padding: 40px;
+  font-size: 60px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
 .content-section2 i {
   padding: 5rem;
   display: block;
   size: 5px;
 }
  .content-section {
-   padding-top: 4rem;
+   padding-top:4rem;
    padding-bottom: 4rem;
    padding-left: 4rem;
    padding-right: 4rem;
    min-height: 30rem;
    position: relative;
-   display: table;
+   display: block;
    width: 100%;
    height: auto;
  
-   background: linear-gradient(88deg, #401a57,#883d66, #d467d8);
+   background: linear-gradient(88deg, #981ee4 ,#4e4e4e, #707070);
  }
  .content-section-heading h2 {
    font-size: 3rem;
