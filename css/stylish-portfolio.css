@@ -39,59 +39,56 @@ html {
     display: table;
     width: 100%;
     height: auto;
-  
-    background: linear-gradient(88deg, #401a57 ,#883d66, #d467d8);
+    text-align: left;
+    color: #000000;
+    background: #ffffff;
   }
-.content-section-2 h2 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 77px;
-  color: #000000;
-  font-weight: 400;
-}
-.content-section-2 p {
-  font-family: 'Oswald', sans-serif;
-  font-size: 24px;
-  color: #000000;
-  font-weight: 300;
-}
-.content-section2 i {
-  padding: 5rem;
-  display: block;
-  size: 5px;
-}
- .content-section {
-   padding-top: 4rem;
-   padding-bottom: 4rem;
-   padding-left: 4rem;
-   padding-right: 4rem;
-   min-height: 30rem;
-   position: relative;
-   display: block;
-   width: 100%;
-   height: auto;
- 
-   background: linear-gradient(88deg, #981ee4 ,#4e4e4e, #707070);
- }
- .content-section-heading h2 {
-   font-size: 3rem;
- }
- .content-section-heading h3 {
-   font-size: 1rem;
-   text-transform: uppercase;
- }
- .content-section-aboutme h2 {
-     font-family: 'Signika', sans-serif;
-     font-size: 77px;
-     color: #000000;
-     font-weight: 400;
-   }
- 
- .content-section-aboutme p {
+  .content-section-2 h2 {
+    font-family:'Signika', sans-serif;
+    font-size: 77px;
+    color: #000000;
+    font-weight: 400;
+  }
+  .content-section-2 p {
+    font-family:'Signika', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    color: #000000;
+    font-weight: 300;
+  }
+  .fab {
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    font-size: 75px;
+    width: 70px;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 36px;
-    font-weight: 200;
+    text-decoration: none;
+  }
+
+  .content-section {
+    padding-top:4rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+  }
+  .content-section-heading h2 {
+    font-family:'Signika', sans-serif;
+    font-size: 77px;
+    color: #000000;
+    font-weight: 400;
    }
+   .content-section-heading h3 {
+    font-family:'Signika', sans-serif;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 300;
+  }
 
    h1,
    h2,
@@ -107,14 +104,6 @@ html {
  .text-faded {
    color: rgba(255, 255, 255, 0.7);
  }
-.fab {
-  color: rgb(o, 0, 0);
-  padding: 40px;
-  font-size: 60px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
 
  .map {
    height: 30rem;
@@ -393,19 +382,32 @@ html {
  .btn-primary:focus,
  .btn-primary:hover {
   /*background-color: #00cdf1 !important;*/
-  background-color: #1d809f !important;
+  background-color: #000000 !important;
   border-color: transparent !important;
 }
  .btn-secondary {
-   background-color: #ecb807 !important;
-   border-color: #ecb807 !important;
-   color: #fff !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  outline: none;
+  color: #fff !important;
  }
  .btn-secondary:active,
  .btn-secondary:focus,
  .btn-secondary:hover {
-   background-color: #ba9106 !important;
-   border-color: #ba9106 !important;
+   background-color: #000000 !important;
+   border-color: transparent !important;
+ }
+ .btn-third {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  outline: none;
+  color: #fff !important;
+ }
+ .btn-third:active,
+ .btn-third:focus,
+ .btn-third:hover {
+   background-color: #000000 !important;
+   border-color: transparent !important;
  }
  .btn-dark {
    color: #fff !important;
