@@ -4157,6 +4157,10 @@ input[type="button"].btn-block {
   padding: 0.5rem 1rem;
 }
 
+.navbar-custom {
+  background-color: black;
+}
+
 .navbar > .container,
 .navbar > .container-fluid {
   display: -ms-flexbox;
