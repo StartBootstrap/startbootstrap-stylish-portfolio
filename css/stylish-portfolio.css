@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Stylish Portfolio v5.0.7 (https://startbootstrap.com/template-overviews/stylish-portfolio)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+ * Start Bootstrap - Stylish Portfolio v5.0.8 (https://startbootstrap.com/themes/stylish-portfolio)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
 
 body,
@@ -266,7 +266,9 @@ h6 {
     margin: 0;
   }
   .portfolio-item .caption {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, background-color 0.7s;
+    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
   }
@@ -277,7 +279,9 @@ h6 {
     margin-bottom: 5rem;
   }
   .portfolio-item img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    transition: -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
@@ -290,6 +294,12 @@ h6 {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+}
+
+.map iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
 }
 
 footer.footer {
