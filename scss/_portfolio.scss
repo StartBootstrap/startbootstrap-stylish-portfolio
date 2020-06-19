@@ -30,8 +30,7 @@
     max-width: none;
     margin: 0;
     .caption {
-      -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-      -webkit-clip-path: inset(0px);
+      transition: clip-path 0.25s ease-out, background-color 0.7s;
       clip-path: inset(0px);
       .caption-content {
         transition: opacity 0.25s;
@@ -41,18 +40,15 @@
       }
     }
     img {
-      -webkit-transition: -webkit-clip-path 0.25s ease-out;
-      -webkit-clip-path: inset(-1px);
+      transition: clip-path 0.25s ease-out;
       clip-path: inset(-1px);
     }
     &:hover {
       img {
-        -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem);
       }
       .caption {
         background-color: fade-out($primary, 0.1);
-        -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem);
       }
     }
