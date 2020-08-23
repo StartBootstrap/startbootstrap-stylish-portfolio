@@ -36,7 +36,8 @@
         "simple-line-icons": "^2.4.1"
     },
     "devDependencies": {
-        "browser-sync": "2.26.7",
+        "browser-sync": "^2.26.12",
+        "clean-css-cli": "^4.3.0",
         "del": "5.1.0",
         "gulp": "4.0.2",
         "gulp-autoprefixer": "7.0.1",
