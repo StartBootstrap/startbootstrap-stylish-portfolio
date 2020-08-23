@@ -394,3 +394,7 @@ a:hover, a:focus, a:active {
 .text-secondary {
   color: #fff !important;
 }
+
+.purpleiconcolor {
+  color: #3f2154;
+}
