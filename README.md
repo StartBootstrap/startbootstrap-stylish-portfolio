@@ -16,6 +16,7 @@
 - Comments: English, first letter capitalized. Comment symbol (#) at the beginning of the line, but the comment itself indented the same way as surrounding code.
 
 ## Git Conventions
+
 - Feature Branches.
 - Everyone on site should submit a review for each pull request before merging with the main branch.
 - **Feature branch naming conventions:**
