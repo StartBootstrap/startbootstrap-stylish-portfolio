@@ -1,0 +1,16 @@
+.map {
+    height: 30rem;
+
+    iframe {
+        pointer-events: none;
+        height: 100%;
+        width: 100%;
+        border: 0;
+    }
+}
+
+@media(max-width: 992px) {
+    .map {
+        height: 75%;
+    }
+}
