@@ -7542,6 +7542,7 @@ button.bg-dark:focus {
 .mb-1,
 .my-1 {
   margin-bottom: 0.25rem !important;
+  text-shadow: 1px 1px black;
 }
 
 .ml-1,
@@ -9813,6 +9814,7 @@ a.text-primary:hover, a.text-primary:focus {
 
 .text-secondary {
   color: #ecb807 !important;
+  text-shadow: 1px 1px black;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -9821,6 +9823,11 @@ a.text-secondary:hover, a.text-secondary:focus {
 
 .text-success {
   color: #28a745 !important;
+}
+
+.coloredits {
+  color: #ecb807;
+  text-shadow: 1px 1px black;
 }
 
 a.text-success:hover, a.text-success:focus {
