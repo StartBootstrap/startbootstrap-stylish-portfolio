@@ -474,7 +474,10 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  /* background-image: no-repeat, center, center fixed;  */
+  background-size: cover;
+
 }
 
 .img-thumbnail {
