@@ -7545,7 +7545,13 @@ button.bg-dark:focus {
 .mb-1,
 .my-1 {
   margin-bottom: 0.25rem !important;
-  text-shadow: 1px 1px black;
+  /* text-shadow: 2px 1px  black; */
+}
+
+.mb-1 {
+  color:  black;
+  /* text-shadow: -.7px -.7px 0 #000, .7px -.7px 0 #000, -.7px .7px 0 #000, .7px .7px 0 #000; */
+  
 }
 
 .ml-1,
@@ -10151,7 +10157,7 @@ html {
 
 .callout {
   padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/Pics-for-Portfolio/bg-pic.jpeg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/Dimetri-Shearwood-Resume.pdf");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
