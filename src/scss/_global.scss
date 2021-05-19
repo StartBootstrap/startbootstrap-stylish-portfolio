@@ -1,3 +1,7 @@
+// 
+// Global
+// 
+
 body,
 html {
     width: 100%;
@@ -38,14 +42,14 @@ html {
 
     text-align: center;
 
-    color: white;
+    color: $white;
     background: fade-out($gray-800, .5);
 
     line-height: 45px;
 
     &:focus,
     &:hover {
-        color: white;
+        color: $white;
     }
 
     &:hover {
