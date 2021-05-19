@@ -1,5 +1,5 @@
 /*!
-* Start Bootstrap - Stylish Portfolio v5.1.0 (https://startbootstrap.com/theme/stylish-portfolio)
+* Start Bootstrap - Stylish Portfolio v6.0.0 (https://startbootstrap.com/theme/stylish-portfolio)
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
 */
@@ -12,29 +12,6 @@
         $("#sidebar-wrapper").toggleClass("active");
         $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
         $(this).toggleClass("active");
-    });
-
-    // Smooth scrolling using anime.js
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function () {
-        if (
-            location.pathname.replace(/^\//, "") ==
-            this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length ?
-                target :
-                $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-                anime({
-                    targets: 'html, body',
-                    scrollTop: target.offset().top,
-                    duration: 1000,
-                    easing: 'easeInOutExpo'
-                });
-                return false;
-            }
-        }
     });
 
     // Closes responsive menu when a scroll trigger link is clicked
