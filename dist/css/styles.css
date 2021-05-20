@@ -10929,6 +10929,7 @@ html {
 
 .sidebar-nav > .sidebar-brand a {
   color: #fff;
+  text-decoration: none;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
