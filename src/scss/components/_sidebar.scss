@@ -1,4 +1,6 @@
-/* Side Menu */
+// 
+// Sidebar
+// 
 
 #sidebar-wrapper {
     position: fixed;
@@ -55,6 +57,7 @@
 
 .sidebar-nav>.sidebar-brand a {
     color: $white;
+    text-decoration: none;
 }
 
 .sidebar-nav>.sidebar-brand a:hover {
