@@ -16,6 +16,8 @@
     transform: translateX(250px);
     background: $primary;
     border-left: 1px solid fade-out($white, 0.9);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .sidebar-nav {
