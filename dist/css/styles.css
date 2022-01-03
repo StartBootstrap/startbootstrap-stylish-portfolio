@@ -119,6 +119,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
+  color: white;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
@@ -2414,7 +2415,7 @@ textarea.form-control-lg {
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
@@ -11469,6 +11470,7 @@ footer.footer .social-link:hover {
   }
 }
 .masthead {
+  color: white;
   min-height: 30rem;
   position: relative;
   display: table;
@@ -11476,7 +11478,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fi.imgur.com%2FpnztT1T.gif&sp=1641190238Tc9bbcefad81febd6d24174faff08083f69874716d84c37aa471edc58e8d43afe");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
