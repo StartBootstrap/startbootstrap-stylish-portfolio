@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Stylish Portfolio v6.0.4 (https://startbootstrap.com/theme/stylish-portfolio)
-* Copyright 2013-2021 Start Bootstrap
+* Copyright 2013-2022 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
 */
 /*!
@@ -2414,7 +2414,7 @@ textarea.form-control-lg {
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
@@ -3030,8 +3030,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #1D809F;
-  border-color: #1D809F;
+  background-color: #005a75;
+  border-color: #139ec9;
 }
 .btn-primary:hover {
   color: #fff;
@@ -7360,6 +7360,7 @@ textarea.form-control-lg {
 }
 
 .mb-1 {
+  color: white;
   margin-bottom: 0.25rem !important;
 }
 
@@ -7376,6 +7377,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
+  color: white;
   margin-bottom: 3rem !important;
 }
 
@@ -11293,6 +11295,8 @@ html {
 }
 
 .content-section {
+  background-color: blue;
+  color: black;
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
 }
@@ -11476,7 +11480,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(10deg, rgba(0, 0, 0, 100) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fi.imgur.com%2FpnztT1T.gif&sp=1641192075T2a2e63edea39d626ade6996bcc76379204ac8dbb6ac3402b15af7b78a1fc931b");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
