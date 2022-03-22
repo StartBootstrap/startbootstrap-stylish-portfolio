@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Stylish Portfolio v6.0.4 (https://startbootstrap.com/theme/stylish-portfolio)
-* Copyright 2013-2021 Start Bootstrap
+* Copyright 2013-2022 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
 */
 /*!
@@ -11319,7 +11319,7 @@ html {
   text-align: center;
   color: #fff;
   background: rgba(52, 58, 64, 0.5);
-  line-height: 45px;
+  line-height: 50px;
 }
 .scroll-to-top:focus, .scroll-to-top:hover {
   color: #fff;
